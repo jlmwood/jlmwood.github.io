@@ -65,3 +65,6 @@ body{background:var(--paper);font-size:15px}header{height:90px;background:rgba(2
 .story-refined .facts div>span{font-size:14px;letter-spacing:.08em}
 .story-refined .facts p{font-size:12px!important;margin:10px 0 0;color:var(--muted)}
 @media(max-width:700px){.story-refined .story-heading{grid-template-columns:1fr;gap:28px}.story-refined .lead{font-size:19px}.story-refined .facts{margin-top:30px;padding-top:25px}.story-refined .facts>div{padding:0 13px}.story-refined .facts strong{font-size:42px}.story-refined .facts strong span{font-size:20px}.story-refined .facts div>span{font-size:11px;letter-spacing:0}.story-refined .facts p{font-size:10px!important}}
+
+/* Immediate section navigation */
+html{scroll-behavior:auto!important}
