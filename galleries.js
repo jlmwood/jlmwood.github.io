@@ -390,5 +390,33 @@ window.JLM_GALLERIES = [
       "玻璃管展示架"
     ],
     "source": "企業提供產品實拍照片"
+  },
+  {
+    "id": "beehive",
+    "category": "commercial",
+    "label": "PROJECT COLLABORATION / 專案合作",
+    "title": "蜂箱・友善蜜蜂合作計畫",
+    "subtitle": "從箱體製作到養蜂現場，讓材料應用連結友善蜜蜂與環境保護。",
+    "description": "蜂箱合作專案以友善蜜蜂與環境保護為方向，將材料製作導入蜂箱的箱體與構件。相簿收錄成品外觀、養蜂現場、批次製作與構件示意，呈現從產品製作到實際使用的合作過程。",
+    "focus": "箱體接合、通風開口、扣件與現場使用",
+    "images": [
+      "beehive-01.jpg",
+      "beehive-02.jpg",
+      "beehive-03.jpg",
+      "beehive-04.jpg",
+      "beehive-05.jpg",
+      "beehive-06.jpg",
+      "beehive-07.jpg"
+    ],
+    "captions": [
+      "蜂箱成品・箱體與開口配置",
+      "養蜂現場・箱體與蜂巢框配置",
+      "批次製作・蜂箱成品堆疊",
+      "構件規格示意",
+      "成品尺寸示意",
+      "前後面視圖",
+      "左右面視圖"
+    ],
+    "source": "企業提供蜂箱合作專案照片與構件圖；圖示規格依專案確認"
   }
 ];
