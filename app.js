@@ -41,7 +41,7 @@ function openProject(id){
 }
 document.querySelectorAll('[data-project]').forEach(b=>b.addEventListener('click',()=>openProject(b.dataset.project)));
 document.querySelectorAll('[data-feature]').forEach(b=>b.addEventListener('click',()=>{
- featuredProject=b.dataset.feature;const p=projects[featuredProject];$('#feature-image').src='assets/'+p.images[0];$('#feature-image').alt=p.title+'・'+p.captions[0];$('#feature-label').textContent=p.label;$('#feature-title').textContent=p.title;$('#feature-description').textContent=p.subtitle;
+ featuredProject=b.dataset.feature;const p=projects[featuredProject];const featurePhoto=featuredProject==='terrace'?1:0;$('#feature-image').src='assets/'+p.images[featurePhoto];$('#feature-image').alt=p.title+'・'+p.captions[featurePhoto];$('#feature-label').textContent=p.label;$('#feature-title').textContent=p.title;$('#feature-description').textContent=p.subtitle;
  document.querySelectorAll('[data-feature]').forEach(button=>{button.classList.toggle('active',button===b);button.setAttribute('aria-pressed',String(button===b));});
 }));
 $('#feature-open').addEventListener('click',()=>openProject(featuredProject));
