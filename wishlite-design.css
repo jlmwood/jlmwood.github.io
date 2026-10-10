@@ -101,3 +101,6 @@ html{scroll-behavior:auto!important}
 
 /* Keep cutlery handles visible in the desktop products cover. */
 .project-grid .project-card[data-project="desktop-products"] .project-image img{object-position:50% 100%}
+
+/* Align catalog and FAQ headings and column boundaries. */
+.catalog-faq{align-items:stretch}.catalog-panel{display:flex;flex-direction:column}.catalog-column-heading,.faq-questions{padding-top:0}.catalog-column-heading>.eyebrow,.faq-questions>.eyebrow{margin:0 0 14px}.catalog-column-heading>h3,.faq-questions>h3{font-size:25px;line-height:1.6;margin:0 0 30px}.catalog-stage{flex:1;min-height:380px}.catalog-caption{min-height:62px;padding-top:20px}.catalog-faq .faq-questions details:last-child{border-bottom:1px solid #d7d9cd}@media(max-width:850px){.catalog-stage{min-height:420px;flex:none}.catalog-column-heading>h3,.faq-questions>h3{font-size:23px;margin-bottom:25px}.catalog-caption{min-height:0}.faq-questions{padding-top:0}}
