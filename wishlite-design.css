@@ -178,3 +178,6 @@ body{overflow-anchor:none}
 
 /* Read online first, then discuss material needs */
 .catalog-next-step{margin-top:22px;padding-top:16px;border-top:1px solid #d3d9cb;display:flex;align-items:center;gap:12px;flex-wrap:wrap}.catalog-next-step p{font-size:12px;line-height:1.7;color:#596650;margin:0}.catalog-next-step a{font-size:13px;color:#284b36;border-bottom:1px solid #82917b;padding:3px 0;font-weight:500}.catalog-next-step a span{margin-left:10px}.catalog-read-primary{white-space:nowrap}.catalog-purpose .catalog-actions{flex-wrap:wrap;gap:16px 24px}
+
+/* Approved supplied catalog scene: crop only the left photographic panel. */
+.catalog-scene-crop{position:relative;aspect-ratio:682/740;padding:0!important;min-height:0!important;overflow:hidden;background:#e8e5d9}.catalog-scene-crop .catalog-book{position:absolute;inset:0;width:100%;max-width:none;height:100%;display:block}.catalog-purpose .catalog-scene-crop img{position:absolute;left:0;top:-9.459459%;width:187.683284%!important;max-width:none!important;height:129.72973%!important;object-fit:fill;box-shadow:none;transform:none}
