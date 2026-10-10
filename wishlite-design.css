@@ -165,3 +165,10 @@ body{overflow-anchor:none}
 @media(max-width:1000px){.catalog-purpose .catalog-feature-copy{padding:32px}.catalog-content-list p{grid-template-columns:22px 1fr}.catalog-content-list small{grid-column:2}.catalog-visual{min-height:440px}}
 @media(max-width:700px){.catalog-purpose{grid-template-columns:1fr}.catalog-visual{min-height:0;padding:26px}.catalog-purpose .catalog-book img{height:230px}.catalog-purpose .catalog-feature-copy{padding:30px 26px}.catalog-content-list p{grid-template-columns:22px 100px 1fr}.catalog-content-list small{grid-column:auto}.catalog-purpose h2{font-size:34px}}
 @media(max-width:400px){.catalog-content-list p{grid-template-columns:22px 1fr}.catalog-content-list small{grid-column:2}}
+
+/* Keep the beehive body and base in the cover frame */
+.project-grid .project-card[data-project="beehive"] .project-image img{object-position:50% 74%;width:90%;margin:0 auto;display:block}
+
+.project-grid .project-card[data-project="beehive"] .project-image{background:#e7e9e3}
+
+.project-grid .project-card[data-project="beehive"] .project-image{aspect-ratio:1.6}.project-grid .project-card[data-project="beehive"] .project-image img{height:100%;aspect-ratio:auto}
