@@ -181,3 +181,5 @@ body{overflow-anchor:none}
 
 /* Approved supplied catalog scene: crop only the left photographic panel. */
 .catalog-scene-crop{position:relative;aspect-ratio:682/740;padding:0!important;min-height:0!important;overflow:hidden;background:#e8e5d9}.catalog-scene-crop .catalog-book{position:absolute;inset:0;width:100%;max-width:none;height:100%;display:block}.catalog-purpose .catalog-scene-crop img{position:absolute;left:0;top:-9.459459%;width:187.683284%!important;max-width:none!important;height:129.72973%!important;object-fit:fill;box-shadow:none;transform:none}
+
+.catalog-purpose .catalog-scene-crop{width:100%;min-width:0;align-self:start}
