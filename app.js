@@ -13,7 +13,7 @@ function updateSeries(){const data=series[chosenSeries];$('#series-number').text
 for(const color of colors){const b=document.createElement('button');b.type='button';b.style.background=color.hex;b.setAttribute('aria-label',color.name+'（螢幕示意）');b.title=color.name;b.setAttribute('aria-pressed',String(color.name===chosenColor));if(color.name===chosenColor)b.classList.add('active');b.addEventListener('click',()=>{chosenColor=color.name;$('#color-name').textContent=chosenColor;document.querySelectorAll('#swatches button').forEach(button=>{const active=button===b;button.classList.toggle('active',active);button.setAttribute('aria-pressed',String(active));});updateSelection();});$('#swatches').append(b);}
 document.querySelectorAll('#uses button').forEach(b=>b.addEventListener('click',()=>{chosenSeries=b.dataset.use;document.querySelectorAll('#uses button').forEach(button=>{const active=button===b;button.classList.toggle('active',active);button.setAttribute('aria-pressed',String(active));});updateSeries();}));
 $('#spec').addEventListener('change',updateSelection);updateSeries();
-function emailDraft(text){window.location.href='mailto:wishlite1111@gmail.com?subject='+encodeURIComponent('捷綠盟合作需求')+'&body='+encodeURIComponent(text);}
+function emailDraft(text,keepText=false){window.location.href='mailto:wishlite1111@gmail.com?subject='+encodeURIComponent(JLM_I18N.t('捷綠盟合作需求'))+'&body='+encodeURIComponent(keepText?text:JLM_I18N.t(text));}
 function addInquiry(text){emailDraft(text);}
 $('#add-material').addEventListener('click',()=>addInquiry('希望了解：'+selection()));
 $('#menu').addEventListener('click',()=>{const open=$('#navigation').classList.toggle('open');$('#menu').setAttribute('aria-expanded',String(open));});
@@ -55,9 +55,9 @@ $('.dialog-photo').addEventListener('touchend',e=>{if(!touchStart)return;const d
 $('.dialog-close').addEventListener('click',()=>$('#project-dialog').close());
 $('#project-dialog').addEventListener('click',e=>{const rect=e.currentTarget.getBoundingClientRect();if(e.clientX<rect.left||e.clientX>rect.right||e.clientY<rect.top||e.clientY>rect.bottom)e.currentTarget.close();});
 $('#project-inquiry').addEventListener('click',()=>{$('#project-dialog').close();addInquiry('希望提出空間應用需求：'+projects[currentProject].title);});
-$('#inquiry').addEventListener('submit',e=>{e.preventDefault();const data=new FormData(e.currentTarget);summary=['捷綠盟合作需求','聯絡人：'+data.get('name'),'公司／單位：'+(data.get('company')||'未填寫'),'Email：'+data.get('email'),'計畫類型：'+data.get('type'),'','需求內容：',data.get('message')].join('\n');$('#summary-text').textContent=summary;$('#inquiry-result').hidden=false;emailDraft(summary);});
+$('#inquiry').addEventListener('submit',e=>{e.preventDefault();const data=new FormData(e.currentTarget);summary=[JLM_I18N.t('捷綠盟合作需求'),JLM_I18N.t('聯絡人：')+data.get('name'),JLM_I18N.t('公司／單位：')+(data.get('company')||JLM_I18N.t('未填寫')),'Email: '+data.get('email'),JLM_I18N.t('計畫類型：')+JLM_I18N.t(data.get('type')),'',JLM_I18N.t('需求內容：'),data.get('message')].join('\n');$('#summary-text').textContent=summary;$('#inquiry-result').hidden=false;emailDraft(summary,true);});
 $('#inquiry').addEventListener('input',()=>{$('#inquiry-result').hidden=true;});
-$('#download-summary').addEventListener('click',()=>{const url=URL.createObjectURL(new Blob(['\ufeff'+summary],{type:'text/plain;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download='捷綠盟-合作需求.txt';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);});
+$('#download-summary').addEventListener('click',()=>{const url=URL.createObjectURL(new Blob(['\ufeff'+summary],{type:'text/plain;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download=JLM_I18N.t('捷綠盟-合作需求.txt');document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);});
 $('#year').textContent=new Date().getFullYear();
 
 document.querySelectorAll('.service-inquiry').forEach(b=>b.addEventListener('click',()=>{document.querySelector('#inquiry select[name=type]').value=b.dataset.type;addInquiry(b.dataset.inquiry);}));
