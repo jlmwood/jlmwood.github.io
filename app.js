@@ -60,7 +60,7 @@ $('#year').textContent=new Date().getFullYear();
 document.querySelectorAll('.service-inquiry').forEach(b=>b.addEventListener('click',()=>{document.querySelector('#inquiry select[name=type]').value=b.dataset.type;addInquiry(b.dataset.inquiry);}));
 
 // Opening gallery: pause on focus/hover, hidden pages and reduced motion.
-const bannerProjects=['exhibition','commercial','colorwall'];
+const bannerProjects=['exhibition','commercial','terrace'];
 let bannerIndex=0,bannerTimer=null,bannerPaused=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const banner=$('.case-banner');
 function renderBanner(index){bannerIndex=(index+bannerProjects.length)%bannerProjects.length;document.querySelectorAll('.banner-image').forEach((img,i)=>img.classList.toggle('active',i===bannerIndex));document.querySelectorAll('[data-banner]').forEach((button,i)=>{button.classList.toggle('active',i===bannerIndex);button.setAttribute('aria-pressed',String(i===bannerIndex));});const item=projects[bannerProjects[bannerIndex]];$('#banner-title').textContent=item.title;$('#banner-label').textContent=item.label;}

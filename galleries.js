@@ -49,17 +49,19 @@ window.JLM_GALLERIES = [
     "id": "terrace",
     "category": "outdoor",
     "label": "OUTDOOR / 戶外景觀",
-    "title": "戶外露臺",
-    "subtitle": "以腳下的紋理，承接戶外的光與日常。",
-    "description": "木質色板材與開放露臺相互呼應。規劃類似應用，可從面積、使用環境、支撐方式與收邊需求開始。",
+    "title": "露臺地坪・應用與施工",
+    "subtitle": "從地板紋理到現場鋪設，觀察露臺材料應用。",
+    "description": "收錄企業提供的露臺鋪設施工照片與目錄露臺應用展示，呈現日照下的材料紋理。首張仍可見施工中的開口、支撐與物料，並非完工照片；兩張影像不表示同一工程。",
     "focus": "地板、平台、收邊",
     "images": [
+      "sunny-terrace.jpg",
       "landscape-001.jpg"
     ],
     "captions": [
+      "陽光下的露臺地板鋪設施工實景",
       "戶外露臺地板"
     ],
-    "source": "2025 產品目錄 P11"
+    "source": "首張：企業提供實景；第二張：2025 產品目錄 P11"
   },
   {
     "id": "platform",
