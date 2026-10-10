@@ -175,3 +175,6 @@ body{overflow-anchor:none}
 
 /* Focus the cover on the four cat houses */
 .project-grid .project-card[data-project="houtong"] .project-image img{object-position:50% 70%;transform:scale(1.18);transform-origin:48% 75%}
+
+/* Read online first, then discuss material needs */
+.catalog-next-step{margin-top:22px;padding-top:16px;border-top:1px solid #d3d9cb;display:flex;align-items:center;gap:12px;flex-wrap:wrap}.catalog-next-step p{font-size:12px;line-height:1.7;color:#596650;margin:0}.catalog-next-step a{font-size:13px;color:#284b36;border-bottom:1px solid #82917b;padding:3px 0;font-weight:500}.catalog-next-step a span{margin-left:10px}.catalog-read-primary{white-space:nowrap}.catalog-purpose .catalog-actions{flex-wrap:wrap;gap:16px 24px}
