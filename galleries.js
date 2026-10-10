@@ -1,4 +1,20 @@
 window.JLM_GALLERIES = [
+{
+  "id": "lion-picnic",
+  "category": "outdoor",
+  "label": "PROJECT COLLABORATION / 專案合作",
+  "title": "雄獅文具・戶外野餐桌椅",
+  "subtitle": "讓再生材料走進戶外野餐，串起桌面、座席與相聚時光。",
+  "description": "捷綠盟與雄獅文具的戶外野餐桌椅專案合作，將材料應用於戶外用餐與休憩空間。長桌搭配箱式座席，沿著綠地排列，呈現桌椅如何回應多人相聚與場域配置的需求。照片記錄專案的現場使用情境。",
+  "focus": "戶外野餐長桌、箱式座席、場域配置",
+  "images": [
+    "lion-picnic.jpg"
+  ],
+  "captions": [
+    "雄獅文具・戶外野餐桌椅專案現場"
+  ],
+  "source": "捷綠盟產業介紹簡報第 8 頁；企業提供專案說明"
+},
   {
     "id": "penghu",
     "category": "outdoor",
