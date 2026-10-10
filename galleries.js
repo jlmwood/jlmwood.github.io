@@ -240,24 +240,6 @@ window.JLM_GALLERIES = [
     "source": "企業提供的應用實景照片"
   },
   {
-    "id": "pavilion",
-    "category": "outdoor",
-    "label": "OUTDOOR / 戶外地坪與休憩",
-    "title": "景觀休憩設施",
-    "subtitle": "從外部配置到內部座席，呈現休憩設施的材料應用。",
-    "description": "從外部配置到內部座席，呈現休憩設施的材料應用。 圖片由企業提供，照片呈現不同應用場景，個別工程名稱與供應範圍依專案確認。",
-    "focus": "景觀配置、座席、地坪",
-    "images": [
-      "application-real-9.jpg",
-      "application-real-6.jpg"
-    ],
-    "captions": [
-      "景觀設施外觀實景",
-      "休憩座席與地坪實景"
-    ],
-    "source": "企業提供的應用實景照片"
-  },
-  {
     "id": "furniture",
     "category": "product",
     "label": "PRODUCT / 家具與日常物件",
@@ -439,13 +421,17 @@ window.JLM_GALLERIES = [
       "application-added-05.jpg",
       "application-added-03.jpg",
       "application-added-04.jpg",
-      "application-added-02.jpg"
+      "application-added-02.jpg",
+      "application-real-9.jpg",
+      "application-real-6.jpg"
     ],
     "captions": [
       "涼亭外觀・入口與欄杆配置",
       "涼亭內部・座席與地坪",
       "座席、屋頂與地坪細節",
-      "景觀休憩設施・場域外觀"
+      "景觀休憩設施・場域外觀",
+      "景觀設施外觀實景",
+      "休憩座席與地坪實景"
     ],
     "source": "企業提供景觀休憩設施實景照片"
   }
