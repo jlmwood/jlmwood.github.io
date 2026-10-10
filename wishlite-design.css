@@ -98,3 +98,6 @@ html{scroll-behavior:auto!important}
 @media(max-width:1000px){.catalog-faq{gap:40px}.catalog-caption{align-items:start;flex-direction:column}.catalog-stage{min-height:410px}}
 @media(max-width:850px){.catalog-faq{grid-template-columns:1fr;padding:60px 6%;gap:40px}.catalog-heading{flex-direction:column;align-items:start;gap:20px}.catalog-heading>p{margin:0}.catalog-caption{flex-direction:row;align-items:center}.catalog-stage{min-height:420px}.faq-questions{padding-top:15px}}
 @media(max-width:480px){.catalog-caption{flex-direction:column;align-items:stretch}.catalog-download{justify-content:space-between}.catalog-stage{min-height:380px}.catalog-stage img{width:190px}.catalog-heading h2{font-size:31px}}
+
+/* Keep cutlery handles visible in the desktop products cover. */
+.project-grid .project-card[data-project="desktop-products"] .project-image img{object-position:50% 100%}

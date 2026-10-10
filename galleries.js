@@ -129,17 +129,19 @@ window.JLM_GALLERIES = [
     "label": "OUTDOOR / 戶外景觀",
     "title": "露臺地坪・應用與施工",
     "subtitle": "從地板紋理到現場鋪設，觀察露臺材料應用。",
-    "description": "收錄企業提供的露臺鋪設施工照片與目錄露臺應用展示，呈現日照下的材料紋理。首張仍可見施工中的開口、支撐與物料，並非完工照片；兩張影像不表示同一工程。",
+    "description": "收錄企業提供的露臺地坪施工照片與目錄應用展示，觀察板面紋理、鋪設與收邊配置。現場照片仍可見施工開口；各影像不表示同一工程。",
     "focus": "地板、平台、收邊",
     "images": [
       "sunny-terrace.jpg",
-      "landscape-001.jpg"
+      "landscape-001.jpg",
+      "application-added-06.jpg"
     ],
     "captions": [
       "陽光下的露臺地板鋪設施工實景",
-      "戶外露臺地板"
+      "戶外露臺地板",
+      "露臺地坪施工・板面紋理與開口配置"
     ],
-    "source": "首張：企業提供實景；第二張：2025 產品目錄 P11"
+    "source": "企業提供露臺地坪施工實景與2025產品目錄P11"
   },
   {
     "id": "platform",
@@ -339,13 +341,17 @@ window.JLM_GALLERIES = [
       "product-supplied-02.jpg",
       "product-supplied-03.jpg",
       "product-supplied-07.jpg",
-      "product-supplied-13.jpg"
+      "product-supplied-13.jpg",
+      "application-added-08.jpg",
+      "application-added-09.jpg"
     ],
     "captions": [
       "托盤與餐具情境展示",
       "桌曆與底座製作",
       "識別證套製作",
-      "筆具與包裝展示"
+      "筆具與包裝展示",
+      "多色筆具・把柄材質與表面紋理",
+      "USB外殼・產品與包裝展示"
     ],
     "source": "企業提供產品實拍照片"
   },
@@ -381,13 +387,15 @@ window.JLM_GALLERIES = [
       "product-supplied-08.jpg",
       "product-supplied-09.jpg",
       "product-supplied-10.jpg",
-      "product-supplied-12.jpg"
+      "product-supplied-12.jpg",
+      "application-added-07.jpg"
     ],
     "captions": [
       "弧形溝槽板件",
       "展覽文字刻製與展示架",
       "小型溝槽板件",
-      "玻璃管展示架"
+      "玻璃管展示架",
+      "松菸風格店家・懸掛式指示招牌"
     ],
     "source": "企業提供產品實拍照片"
   },
@@ -418,5 +426,27 @@ window.JLM_GALLERIES = [
       "左右面視圖"
     ],
     "source": "企業提供蜂箱合作專案照片與構件圖；圖示規格依專案確認"
+  },
+  {
+    "id": "landscape-rest",
+    "category": "outdoor",
+    "label": "OUTDOOR / 戶外景觀",
+    "title": "景觀休憩設施・涼亭與座席",
+    "subtitle": "從涼亭外觀到座席與地坪，呈現休憩空間的材料配置。",
+    "description": "透過涼亭外觀、內部座席與地坪照片，觀察材料在景觀休憩設施中的配置與接合細節。",
+    "focus": "涼亭、座席、地坪與欄杆配置",
+    "images": [
+      "application-added-05.jpg",
+      "application-added-03.jpg",
+      "application-added-04.jpg",
+      "application-added-02.jpg"
+    ],
+    "captions": [
+      "涼亭外觀・入口與欄杆配置",
+      "涼亭內部・座席與地坪",
+      "座席、屋頂與地坪細節",
+      "景觀休憩設施・場域外觀"
+    ],
+    "source": "企業提供景觀休憩設施實景照片"
   }
 ];
