@@ -74,3 +74,6 @@ html{scroll-behavior:auto!important}
 .project-grid .project-card .project-image img{aspect-ratio:1.5}
 .project-grid .project-card[data-project="asia"] .project-image img{object-fit:contain;background:#17201b}
 @media(min-width:1001px){.project-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+
+.project-grid .project-card{align-self:start}
+.project-grid .project-card:first-child .project-image img{aspect-ratio:1.5}
