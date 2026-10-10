@@ -83,3 +83,18 @@ html{scroll-behavior:auto!important}
 /* Consistent full-frame production videos. */
 .production-clips video{object-fit:cover;object-position:center}
 @media(max-width:700px){.production-clips video{height:auto;aspect-ratio:4/3;max-height:none;object-fit:cover}}
+
+/* Catalog editorial presentation. */
+.catalog-faq{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:54px 70px;background:#f6f4ed;padding-top:85px;padding-bottom:90px}
+.catalog-heading{grid-column:1/-1;display:flex;justify-content:space-between;align-items:end;gap:40px;padding-bottom:30px;border-bottom:1px solid #d8d9cb}
+.catalog-heading h2{font-size:clamp(30px,3vw,44px);line-height:1.55;margin:15px 0 0}
+.catalog-heading>p{font-size:14px;line-height:2;color:#66715f;margin:0 0 8px}
+.catalog-panel{min-width:0}.catalog-stage{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:24px;padding:28px 36px;background:radial-gradient(ellipse at 50% 35%,#eeeee3,#dce0d0);min-height:430px;text-decoration:none;color:#59664d;overflow:hidden}
+.catalog-stage>span{font-size:9px;letter-spacing:.23em}.catalog-stage img{width:210px;max-width:65%;height:auto;box-shadow:12px 18px 28px rgba(34,48,29,.2),2px 2px 0 #fff;transform:rotate(-4deg);transition:transform .3s}
+.catalog-stage:hover img{transform:rotate(-1deg) translateY(-4px)}
+.catalog-caption{padding-top:25px;display:flex;gap:20px;justify-content:space-between;align-items:center}.catalog-caption .eyebrow{margin:0 0 10px;font-size:9px}.catalog-caption h3{font-size:23px;margin:0 0 9px;line-height:1.5}.catalog-caption p:last-child{font-size:12px;color:#66715f;margin:0}
+.catalog-download{display:flex;align-items:center;gap:24px;padding:13px 18px;background:#284b36;color:#fff;text-decoration:none;font-size:12px;white-space:nowrap}.catalog-download:hover{background:#173d31}.catalog-download span{font-size:20px}.catalog-download:focus-visible,.catalog-stage:focus-visible{outline:2px solid #aa8745;outline-offset:5px}
+.faq-questions{padding-top:8px}.faq-questions>.eyebrow{margin-bottom:14px}.faq-questions>h3{font-size:25px;margin:0 0 30px;line-height:1.6}.catalog-faq details{border-color:#d7d9cd}.catalog-faq summary{font-size:15px;padding:23px 0}.catalog-faq details p{font-size:13px;color:#62705b;line-height:2;margin:0 0 24px;padding-right:26px}
+@media(max-width:1000px){.catalog-faq{gap:40px}.catalog-caption{align-items:start;flex-direction:column}.catalog-stage{min-height:410px}}
+@media(max-width:850px){.catalog-faq{grid-template-columns:1fr;padding:60px 6%;gap:40px}.catalog-heading{flex-direction:column;align-items:start;gap:20px}.catalog-heading>p{margin:0}.catalog-caption{flex-direction:row;align-items:center}.catalog-stage{min-height:420px}.faq-questions{padding-top:15px}}
+@media(max-width:480px){.catalog-caption{flex-direction:column;align-items:stretch}.catalog-download{justify-content:space-between}.catalog-stage{min-height:380px}.catalog-stage img{width:190px}.catalog-heading h2{font-size:31px}}
