@@ -104,3 +104,6 @@ html{scroll-behavior:auto!important}
 
 /* Align catalog and FAQ headings and column boundaries. */
 .catalog-faq{align-items:stretch}.catalog-panel{display:flex;flex-direction:column}.catalog-column-heading,.faq-questions{padding-top:0}.catalog-column-heading>.eyebrow,.faq-questions>.eyebrow{margin:0 0 14px}.catalog-column-heading>h3,.faq-questions>h3{font-size:25px;line-height:1.6;margin:0 0 30px}.catalog-stage{flex:1;min-height:380px}.catalog-caption{min-height:62px;padding-top:20px}.catalog-faq .faq-questions details:last-child{border-bottom:1px solid #d7d9cd}@media(max-width:850px){.catalog-stage{min-height:420px;flex:none}.catalog-column-heading>h3,.faq-questions>h3{font-size:23px;margin-bottom:25px}.catalog-caption{min-height:0}.faq-questions{padding-top:0}}
+
+/* Two distinct production records. */
+.production-clips{grid-template-columns:repeat(2,minmax(0,1fr))}.production-clips video{height:auto;aspect-ratio:4/3;object-fit:cover}@media(max-width:700px){.production-clips{grid-template-columns:1fr}}
