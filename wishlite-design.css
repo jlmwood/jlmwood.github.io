@@ -154,3 +154,14 @@ body{overflow-anchor:none}
 
 /* Restore compact desktop case browsing */
 @media(min-width:1001px){.project-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:38px 26px}.project-grid .project-card h3{font-size:23px}}
+
+/* Purpose-led catalog presentation */
+.catalog-purpose{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:0;padding:0;background:#eeeee6;border:1px solid #dfe2d5}
+.catalog-visual{align-self:stretch;background:radial-gradient(ellipse at 50% 48%,#f9f8f2 0%,#e2e6d8 75%);display:flex;flex-direction:column;justify-content:center;align-items:center;padding:34px 32px;min-height:450px}
+.catalog-visual-label,.catalog-visual-edition{font-size:10px;letter-spacing:.17em;color:#5b6857;margin:0}.catalog-visual-label{margin-bottom:24px}.catalog-visual-edition{margin-top:24px}
+.catalog-purpose .catalog-book img{height:290px;transform:rotate(-4deg);box-shadow:12px 18px 26px rgba(30,45,27,.18)}
+.catalog-purpose .catalog-feature-copy{padding:36px 48px}.catalog-purpose h2{font-size:clamp(32px,3.1vw,46px);line-height:1.35;letter-spacing:.02em;margin-bottom:16px;color:#253e2b}.catalog-purpose .catalog-feature-description{font-size:15px;line-height:1.8;margin-bottom:20px}
+.catalog-content-list{border-top:1px solid #d3d9cb;margin-bottom:24px}.catalog-content-list p{display:grid;grid-template-columns:24px 105px 1fr;align-items:baseline;gap:10px;margin:0;padding:10px 0;border-bottom:1px solid #d3d9cb}.catalog-content-list span{font-size:10px;color:#72816a}.catalog-content-list strong{font-size:13px;font-weight:500;color:#304b35}.catalog-content-list small{font-size:12px;color:#596650}.catalog-purpose .catalog-format{font-size:11px;letter-spacing:.04em}.catalog-purpose .catalog-actions{gap:24px}.catalog-purpose .catalog-download{font-size:14px;padding:14px 22px}.catalog-purpose .catalog-preview{font-size:13px}
+@media(max-width:1000px){.catalog-purpose .catalog-feature-copy{padding:32px}.catalog-content-list p{grid-template-columns:22px 1fr}.catalog-content-list small{grid-column:2}.catalog-visual{min-height:440px}}
+@media(max-width:700px){.catalog-purpose{grid-template-columns:1fr}.catalog-visual{min-height:0;padding:26px}.catalog-purpose .catalog-book img{height:230px}.catalog-purpose .catalog-feature-copy{padding:30px 26px}.catalog-content-list p{grid-template-columns:22px 100px 1fr}.catalog-content-list small{grid-column:auto}.catalog-purpose h2{font-size:34px}}
+@media(max-width:400px){.catalog-content-list p{grid-template-columns:22px 1fr}.catalog-content-list small{grid-column:2}}
