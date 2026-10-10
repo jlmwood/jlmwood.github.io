@@ -22,3 +22,6 @@ body{background:var(--paper);font-size:15px}header{height:90px;background:rgba(2
 
 
 .supplied-photo .project-image img{object-position:center 45%}#project-dialog .dialog-photo img{object-fit:contain}.supplied-photo[data-project="pavilion"] .project-image{max-height:300px}
+
+/* Production records preserve each source frame and load on interaction. */
+.production-records{padding-top:55px;padding-bottom:0}.production-records-heading{max-width:650px;margin-bottom:30px}.production-records h3{font-size:30px}.production-records-heading>p:last-child,.production-clips article>p:last-child{color:#d3dccf}.production-clips{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}.production-clips video{display:block;width:100%;height:360px;background:#203323;object-fit:contain;border-radius:4px}.production-clips .eyebrow{margin-top:20px;font-size:11px}.production-clips h4{font-size:20px;margin:12px 0}.production-clips article>p:last-child{font-size:13px}.production-records>.note{color:#d3dccf;margin-top:24px}.process-photo img{object-position:center 48%}@media(max-width:700px){.production-clips{grid-template-columns:1fr;gap:32px}.production-clips video{height:auto;max-height:460px}.production-records h3{font-size:25px}.production-records{padding-top:38px}}

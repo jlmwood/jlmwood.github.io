@@ -182,15 +182,19 @@ window.JLM_GALLERIES = [
     "category": "commercial",
     "label": "PRODUCT / 家具與收納",
     "title": "家具與收納製作",
-    "subtitle": "從展示桌、收納箱到箱式座凳，觀察板材的組合方式。",
-    "description": "從展示桌、收納箱到箱式座凳，觀察板材的組合方式。 圖片由企業提供，照片呈現不同應用場景，個別工程名稱與供應範圍依專案確認。",
+    "subtitle": "從室內家具到收納製作，呈現板材的組合與表面細節。",
+    "description": "收錄室內家具、平台、收納箱與箱式座凳的實景，觀察板材排列、組裝與使用配置。",
     "focus": "板材組裝、收納、家具配置",
     "images": [
+      "new-application-4.jpg",
+      "new-application-5.jpg",
       "application-real-7.jpg",
       "application-real-4.jpg",
       "application-real-1.jpg"
     ],
     "captions": [
+      "室內家具配置・光影與板材細節",
+      "家具與平台・另一視角",
       "箱式座凳・材料表面與組裝細節",
       "開放式收納箱・側板與提把",
       "展示桌與箱式座凳配置"
@@ -216,5 +220,29 @@ window.JLM_GALLERIES = [
       "活動設施・桌凳與互動設備實景"
     ],
     "source": "企業提供實景；首張為 AI 輔助影像優化版，原照保留於第二張"
+  },
+  {
+    "id": "exhibitionassembly",
+    "category": "exhibition",
+    "label": "EXHIBITION / 展場配置",
+    "title": "展場櫃台與展示配置",
+    "subtitle": "從完成配置到組裝現場，看見板材如何落實於展場。",
+    "description": "依完成配置、組裝現場與板件細節呈現展場應用。照片中的參展企業名稱屬現場紀錄，不代表捷綠盟與各企業的直接合作關係。",
+    "focus": "櫃台面板、展示配置、現場組裝",
+    "images": [
+      "new-application-8.jpg",
+      "new-application-7.jpg",
+      "new-application-9.jpg",
+      "new-application-10.jpg",
+      "new-application-11.jpg"
+    ],
+    "captions": [
+      "展場整體配置與櫃台動線",
+      "國際區・展示櫃台配置",
+      "展示櫃台・側向與面板細節",
+      "組裝現場・板件與設備配置",
+      "板件堆疊・現場組裝紀錄"
+    ],
+    "source": "企業提供的展場與組裝實景照片"
   }
 ];
