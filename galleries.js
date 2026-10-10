@@ -1,5 +1,65 @@
 window.JLM_GALLERIES = [
   {
+    "id": "penghu",
+    "category": "outdoor",
+    "label": "CIRCULAR APPLICATION / 在地循環",
+    "title": "澎湖・回收保麗龍公共座椅",
+    "subtitle": "從在地回收，到碼頭公共座椅，讓資源回到使用現場。",
+    "description": "捷綠盟與澎湖觀光單位合作，將當地淨灘回收的保麗龍轉化為再生材料，製成公共座椅，再回到碼頭供民眾使用。相簿依原料回收、座椅製作與場域配置呈現，讓材料再生與實際使用的關係清楚可見。",
+    "focus": "在地回收、材料再生、座椅製作、碼頭應用",
+    "images": [
+      "penghu-4.jpg",
+      "penghu-1.jpg",
+      "penghu-2.jpg",
+      "penghu-3.jpg"
+    ],
+    "captions": [
+      "碼頭座椅・日照下的使用空間",
+      "當地淨灘回收的保麗龍原料",
+      "藍色公共座椅・製作現場",
+      "公共座椅・場域整體配置"
+    ],
+    "source": "企業提供實景照片與專案說明"
+  },
+  {
+    "id": "houtong",
+    "category": "outdoor",
+    "label": "COMMUNITY / 工藝合作",
+    "title": "猴硐貓屋・工藝合作計畫",
+    "subtitle": "以材料與工藝，為浪貓打造棲身空間。",
+    "description": "猴硐貓屋合作計畫，將材料製作應用於浪貓棲身設施。從屋體造型、入口裁切到現場配置，呈現板材加工與組裝如何回應具體的使用需求。照片收錄合作計畫的現場成果。",
+    "focus": "屋體板件、入口裁切、屋頂與組裝",
+    "images": [
+      "community-4.jpg",
+      "community-3.jpg",
+      "community-2.jpg"
+    ],
+    "captions": [
+      "猴硐貓屋・現場配置與屋體外觀",
+      "貓屋整體配置與入口設計",
+      "屋頂板件與計畫文字細節"
+    ],
+    "source": "企業提供實景照片與專案說明"
+  },
+  {
+    "id": "market",
+    "category": "exhibition",
+    "label": "DISPLAY / 市集展示",
+    "title": "市集攤位與展示設施",
+    "subtitle": "從室內展售到戶外市集，呈現攤位的結構與配置。",
+    "description": "以攤位框架、展示桌面與遮棚配置，呈現材料於室內展售及戶外市集的應用。兩張照片記錄不同場域，從整體排列到結構細節，提供展示設施規劃參考。",
+    "focus": "框架、展示桌面、遮棚配置",
+    "images": [
+      "community-9.jpg",
+      "community-6.jpg"
+    ],
+    "captions": [
+      "戶外市集・攤位排列與框架配置",
+      "室內展售・展示桌面與攤位結構"
+    ],
+    "source": "企業提供實景照片與專案說明"
+  },
+  {
     "id": "exhibition",
     "category": "exhibition",
     "label": "EXHIBITION / 展場設計",
@@ -101,9 +161,9 @@ window.JLM_GALLERIES = [
     "id": "commercial",
     "category": "commercial",
     "label": "SPACE / 商業空間",
-    "title": "商業空間・牆面與平台",
-    "subtitle": "從板材排列到細緻收邊，串起牆面與平台。",
-    "description": "牆面、平台與植栽周邊的材料配置，呈現板材排列與收邊細節。從整體比例到局部紋理，觀察空間的銜接。",
+    "title": "水灣・商業空間材料應用",
+    "subtitle": "以板材串接牆面與平台，呈現商業空間的材料配置。",
+    "description": "從牆面鋪陳、平台配置到收邊細節，水灣空間呈現捷綠木如何融入商業場域，讓材料的表面質感、排列方式與空間設計相互呼應。",
     "focus": "牆面、地板、收邊細節",
     "images": [
       "project-009.jpg",
@@ -183,21 +243,25 @@ window.JLM_GALLERIES = [
     "label": "PRODUCT / 家具與收納",
     "title": "家具與收納製作",
     "subtitle": "從室內家具到收納製作，呈現板材的組合與表面細節。",
-    "description": "收錄室內家具、平台、收納箱與箱式座凳的實景，觀察板材排列、組裝與使用配置。",
+    "description": "收錄室內家具、平台、收納箱與箱式座凳的實景，觀察板材排列、組裝與使用配置。 補充活動座椅與市集陳列實景，呈現箱體在不同場景中的使用方式。",
     "focus": "板材組裝、收納、家具配置",
     "images": [
       "new-application-4.jpg",
       "new-application-5.jpg",
       "application-real-7.jpg",
       "application-real-4.jpg",
-      "application-real-1.jpg"
+      "application-real-1.jpg",
+      "community-5.jpg",
+      "community-7.jpg"
     ],
     "captions": [
       "室內家具配置・光影與板材細節",
       "家具與平台・另一視角",
       "箱式座凳・材料表面與組裝細節",
       "開放式收納箱・側板與提把",
-      "展示桌與箱式座凳配置"
+      "展示桌與箱式座凳配置",
+      "循環經濟新創展・箱式座椅配置",
+      "市集商品陳列・堆疊箱體應用"
     ],
     "source": "企業提供的應用實景照片"
   },
