@@ -79,3 +79,7 @@ html{scroll-behavior:auto!important}
 .project-grid .project-card:first-child .project-image img{aspect-ratio:1.5}
 
 .cooperation-details{margin-top:38px;border-top:1px solid var(--line);padding-top:22px}.cooperation-details summary{cursor:pointer;color:var(--green);font-size:15px;display:flex;justify-content:space-between}.cooperation-details .transfer-role{margin-top:24px}#show-all-cases{display:block;margin:35px auto;background:none;border:0;border-bottom:1px solid var(--green);padding:10px 4px;color:var(--green);cursor:pointer}
+
+/* Consistent full-frame production videos. */
+.production-clips video{object-fit:cover;object-position:center}
+@media(max-width:700px){.production-clips video{height:auto;aspect-ratio:4/3;max-height:none;object-fit:cover}}
