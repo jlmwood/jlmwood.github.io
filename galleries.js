@@ -1,20 +1,22 @@
 window.JLM_GALLERIES = [
-{
-  "id": "lion-picnic",
-  "category": "outdoor",
-  "label": "PROJECT COLLABORATION / 專案合作",
-  "title": "雄獅文具・戶外野餐桌椅",
-  "subtitle": "讓再生材料走進戶外野餐，串起桌面、座席與相聚時光。",
-  "description": "捷綠盟與雄獅文具的戶外野餐桌椅專案合作，將材料應用於戶外用餐與休憩空間。長桌搭配箱式座席，沿著綠地排列，呈現桌椅如何回應多人相聚與場域配置的需求。照片記錄專案的現場使用情境。",
-  "focus": "戶外野餐長桌、箱式座席、場域配置",
-  "images": [
-    "lion-picnic.jpg"
-  ],
-  "captions": [
-    "雄獅文具・戶外野餐桌椅專案現場"
-  ],
-  "source": "捷綠盟產業介紹簡報第 8 頁；企業提供專案說明"
-},
+  {
+    "id": "lion-picnic",
+    "category": "outdoor",
+    "label": "PROJECT COLLABORATION / 專案合作",
+    "title": "雄獅文具・戶外野餐桌椅",
+    "subtitle": "讓再生材料走進戶外野餐，串起桌面、座席與相聚時光。",
+    "description": "捷綠盟與雄獅文具的戶外野餐桌椅專案合作，將材料應用於戶外用餐與休憩空間。長桌搭配箱式座席，沿著綠地排列，呈現桌椅如何回應多人相聚與場域配置的需求。照片記錄專案的現場使用情境。",
+    "focus": "戶外野餐長桌、箱式座席、場域配置",
+    "images": [
+      "lion-picnic.jpg",
+      "product-supplied-11.jpg"
+    ],
+    "captions": [
+      "雄獅文具・戶外野餐桌椅專案現場",
+      "雄獅藝術工作室提供圖像・座椅表面與文字細節"
+    ],
+    "source": "捷綠盟產業介紹簡報第 8 頁；企業提供專案說明"
+  },
   {
     "id": "penghu",
     "category": "outdoor",
@@ -324,5 +326,69 @@ window.JLM_GALLERIES = [
       "板件堆疊・現場組裝紀錄"
     ],
     "source": "企業提供的展場與組裝實景照片"
+  },
+  {
+    "id": "desktop-products",
+    "category": "commercial",
+    "label": "PRODUCT / 產品與空間",
+    "title": "桌面用品與文具",
+    "subtitle": "從托盤、桌曆到識別證套與筆具，呈現材料走進日常的不同形式。",
+    "description": "從托盤、桌曆到識別證套與筆具，呈現材料走進日常的不同形式。 照片呈現材料外觀、產品造型與製作細節。",
+    "focus": "托盤、桌曆、識別證套、筆具",
+    "images": [
+      "product-supplied-02.jpg",
+      "product-supplied-03.jpg",
+      "product-supplied-07.jpg",
+      "product-supplied-13.jpg"
+    ],
+    "captions": [
+      "托盤與餐具情境展示",
+      "桌曆與底座製作",
+      "識別證套製作",
+      "筆具與包裝展示"
+    ],
+    "source": "企業提供產品實拍照片"
+  },
+  {
+    "id": "furniture-containers",
+    "category": "commercial",
+    "label": "PRODUCT / 產品與空間",
+    "title": "小家具與容器製作",
+    "subtitle": "從小凳、箱體到圓筒容器，觀察板件組合與立體結構。",
+    "description": "從小凳、箱體到圓筒容器，觀察板件組合與立體結構。 照片呈現材料外觀、產品造型與製作細節。",
+    "focus": "小凳、圓筒容器、箱體",
+    "images": [
+      "product-supplied-04.jpg",
+      "product-supplied-06.jpg",
+      "product-supplied-05.jpg"
+    ],
+    "captions": [
+      "小凳造型與表面質感",
+      "圓筒容器的板條配置",
+      "箱體的接合與開口細節"
+    ],
+    "source": "企業提供產品實拍照片"
+  },
+  {
+    "id": "crafted-displays",
+    "category": "commercial",
+    "label": "PRODUCT / 產品與空間",
+    "title": "加工造型與展示物件",
+    "subtitle": "透過弧形溝槽、文字刻製與展示架，呈現材料的加工細節。",
+    "description": "透過弧形溝槽、文字刻製與展示架，呈現材料的加工細節。 照片呈現材料外觀、產品造型與製作細節。",
+    "focus": "溝槽、文字刻製、展示架",
+    "images": [
+      "product-supplied-08.jpg",
+      "product-supplied-09.jpg",
+      "product-supplied-10.jpg",
+      "product-supplied-12.jpg"
+    ],
+    "captions": [
+      "弧形溝槽板件",
+      "展覽文字刻製與展示架",
+      "小型溝槽板件",
+      "玻璃管展示架"
+    ],
+    "source": "企業提供產品實拍照片"
   }
 ];
