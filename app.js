@@ -7,15 +7,38 @@ const series = {
 };
 const colors = [{name:'灰',hex:'#8c8e86'},{name:'白',hex:'#e8e6dc'},{name:'淺咖',hex:'#ba976f'},{name:'深咖',hex:'#73563d'},{name:'黑',hex:'#3a3d36'},{name:'木紋押花',hex:'#9b7550'}];
 let chosenSeries='板材',chosenColor='淺咖',summary='';
-function selection(){return chosenSeries+'系列 / '+$('#spec').value+' / '+chosenColor;}
+function selection(){return document.querySelector('#uses button.active').textContent.trim()+' / '+chosenSeries+'系列 / '+$('#spec').value+' / '+chosenColor;}
 function updateSelection(){$('#selection-result').textContent='目前選擇：'+selection();}
 function updateSeries(){const data=series[chosenSeries];$('#series-number').textContent=data.number;$('#material-title').textContent=chosenSeries+'系列';$('#material-description').textContent=data.description;$('#spec').replaceChildren(...data.specs.map(value=>{const o=document.createElement('option');o.value=value;o.textContent=value;return o;}));updateSelection();}
 for(const color of colors){const b=document.createElement('button');b.type='button';b.style.background=color.hex;b.setAttribute('aria-label',color.name+'（螢幕示意）');b.title=color.name;b.setAttribute('aria-pressed',String(color.name===chosenColor));if(color.name===chosenColor)b.classList.add('active');b.addEventListener('click',()=>{chosenColor=color.name;$('#color-name').textContent=chosenColor;document.querySelectorAll('#swatches button').forEach(button=>{const active=button===b;button.classList.toggle('active',active);button.setAttribute('aria-pressed',String(active));});updateSelection();});$('#swatches').append(b);}
 document.querySelectorAll('#uses button').forEach(b=>b.addEventListener('click',()=>{chosenSeries=b.dataset.use;document.querySelectorAll('#uses button').forEach(button=>{const active=button===b;button.classList.toggle('active',active);button.setAttribute('aria-pressed',String(active));});updateSeries();}));
 $('#spec').addEventListener('change',updateSelection);updateSeries();
-function emailDraft(text,keepText=false){window.location.href='mailto:wishlite1111@gmail.com?subject='+encodeURIComponent(JLM_I18N.t('捷綠盟合作需求'))+'&body='+encodeURIComponent(keepText?text:JLM_I18N.t(text));}
-function addInquiry(text){emailDraft(text);}
-$('#add-material').addEventListener('click',()=>addInquiry('希望了解：'+selection()));
+function emailDraftUrl(text,keepText=false){return 'mailto:wishlite1111@gmail.com?subject='+encodeURIComponent(JLM_I18N.t('捷綠盟合作需求'))+'&body='+encodeURIComponent(keepText?text:JLM_I18N.t(text));}
+function emailDraft(text,keepText=false){window.location.href=emailDraftUrl(text,keepText);}
+let inquiryTypeChosen=false;
+const inquiryType=$('#inquiry [name=type]');
+inquiryType.addEventListener('change',()=>{inquiryTypeChosen=true;});
+function addInquiry(text,type=null,source='一般合作'){
+ const field=$('#message'), form=$('#inquiry');
+ const hasUserInput=Array.from(form.querySelectorAll('input:not([type=hidden]),textarea')).some(input=>input.value.trim());
+ const addition=JLM_I18N.t(text);
+ const current=field.value;
+ if(!current.includes(addition)){
+  const combined=current+(current?'\n\n':'')+addition;
+  if(combined.length>field.maxLength){$('#inquiry-prefill-status').textContent=JLM_I18N.t('需求文字已接近上限，原內容已保留，請自行補充。');}
+  else{field.value=combined;$('#inquiry-prefill-status').textContent=JLM_I18N.t('已加入需求，原本填寫的內容已保留。');}
+ }
+ const conflict=type&&type!==inquiryType.value&&(inquiryTypeChosen||hasUserInput);
+ if(type&&!inquiryTypeChosen&&!hasUserInput){inquiryType.value=type;inquiryTypeChosen=true;}
+ if(conflict)$('#inquiry-prefill-status').textContent=JLM_I18N.t('已保留原合作類型，新入口資訊已加入需求來源。');
+ const sources=$('#inquiry-source').value==='直接填寫'?[]:$('#inquiry-source').value.split(' / ');
+ if(!sources.includes(source))sources.push(source);
+ $('#inquiry-source').value=sources.join(' / ');
+ $('#inquiry-result').hidden=true;
+ $('#contact').scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
+ field.focus({preventScroll:true});
+}
+$('#add-material').addEventListener('click',()=>addInquiry('希望了解：'+selection(),'材料採購','選材規格'));
 $('#menu').addEventListener('click',()=>{const open=$('#navigation').classList.toggle('open');$('#menu').setAttribute('aria-expanded',String(open));});
 document.querySelectorAll('#navigation a').forEach(a=>a.addEventListener('click',()=>{$('#navigation').classList.remove('open');$('#menu').setAttribute('aria-expanded','false');}));
 const projects=Object.fromEntries(window.JLM_GALLERIES.map(g=>[g.id,g]));
@@ -54,13 +77,15 @@ $('.dialog-photo').addEventListener('touchstart',e=>{touchStart={x:e.changedTouc
 $('.dialog-photo').addEventListener('touchend',e=>{if(!touchStart)return;const dx=e.changedTouches[0].clientX-touchStart.x,dy=e.changedTouches[0].clientY-touchStart.y;if(Math.abs(dx)>55&&Math.abs(dx)>Math.abs(dy)*1.5)showPhoto(photoIndex+(dx<0?1:-1));touchStart=null;},{passive:true});
 $('.dialog-close').addEventListener('click',()=>$('#project-dialog').close());
 $('#project-dialog').addEventListener('click',e=>{const rect=e.currentTarget.getBoundingClientRect();if(e.clientX<rect.left||e.clientX>rect.right||e.clientY<rect.top||e.clientY>rect.bottom)e.currentTarget.close();});
-$('#project-inquiry').addEventListener('click',()=>{$('#project-dialog').close();addInquiry('希望提出空間應用需求：'+projects[currentProject].title);});
-$('#inquiry').addEventListener('submit',e=>{e.preventDefault();const data=new FormData(e.currentTarget);summary=[JLM_I18N.t('捷綠盟合作需求'),JLM_I18N.t('聯絡人：')+data.get('name'),JLM_I18N.t('公司／單位：')+(data.get('company')||JLM_I18N.t('未填寫')),'Email: '+data.get('email'),JLM_I18N.t('計畫類型：')+JLM_I18N.t(data.get('type')),'',JLM_I18N.t('需求內容：'),data.get('message')].join('\n');$('#summary-text').textContent=summary;$('#inquiry-result').hidden=false;emailDraft(summary,true);});
+$('#project-inquiry').addEventListener('click',()=>{$('#project-dialog').close();addInquiry('希望提出空間應用需求：'+projects[currentProject].title,'空間／展場應用','案例應用');});
+function prepareInquirySummary(){const data=new FormData($('#inquiry'));summary=[JLM_I18N.t('捷綠盟合作需求'),JLM_I18N.t('聯絡人：')+data.get('name'),JLM_I18N.t('公司／單位：')+(data.get('company')||JLM_I18N.t('未填寫')),'Email: '+data.get('email'),JLM_I18N.t('計畫類型：')+JLM_I18N.t(data.get('type')),JLM_I18N.t('需求來源：')+String(data.get('source')).split(' / ').map(source=>JLM_I18N.t(source)).join(' / '),'',JLM_I18N.t('需求內容：'),data.get('message')].join('\n');$('#summary-text').textContent=summary;$('#inquiry-result').hidden=false;$('#copy-status').textContent='';}
+$('#inquiry').addEventListener('submit',e=>{e.preventDefault();prepareInquirySummary();});
+document.addEventListener('jlm-language-change',()=>{if(!$('#inquiry-result').hidden)prepareInquirySummary();});
 $('#inquiry').addEventListener('input',()=>{$('#inquiry-result').hidden=true;});
 $('#download-summary').addEventListener('click',()=>{const url=URL.createObjectURL(new Blob(['\ufeff'+summary],{type:'text/plain;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download=JLM_I18N.t('捷綠盟-合作需求.txt');document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);});
 $('#year').textContent=new Date().getFullYear();
 
-document.querySelectorAll('.service-inquiry').forEach(b=>b.addEventListener('click',()=>{document.querySelector('#inquiry select[name=type]').value=b.dataset.type;addInquiry(b.dataset.inquiry);}));
+document.querySelectorAll('.service-inquiry').forEach(b=>b.addEventListener('click',()=>{const type=b.dataset.type==='其他合作'?'技術合作':b.dataset.type;addInquiry(b.dataset.inquiry,type,type);}));
 
 // Opening gallery: pause on focus/hover, hidden pages and reduced motion.
 const bannerProjects=['exhibition','commercial','terrace'];
@@ -71,3 +96,11 @@ function scheduleBanner(){clearInterval(bannerTimer);if(!bannerPaused&&!document
 $('#banner-prev').addEventListener('click',()=>{renderBanner(bannerIndex-1);scheduleBanner();});$('#banner-next').addEventListener('click',()=>{renderBanner(bannerIndex+1);scheduleBanner();});document.querySelectorAll('[data-banner]').forEach(button=>button.addEventListener('click',()=>{renderBanner(Number(button.dataset.banner));scheduleBanner();}));$('#banner-pause').addEventListener('click',()=>{bannerPaused=!bannerPaused;scheduleBanner();});$('#banner-open').addEventListener('click',()=>openProject(bannerProjects[bannerIndex]));banner.addEventListener('mouseenter',()=>clearInterval(bannerTimer));banner.addEventListener('mouseleave',scheduleBanner);banner.addEventListener('focusin',()=>clearInterval(bannerTimer));banner.addEventListener('focusout',()=>setTimeout(scheduleBanner,0));document.addEventListener('visibilitychange',scheduleBanner);window.matchMedia('(prefers-reduced-motion: reduce)').addEventListener('change',e=>{bannerPaused=e.matches;scheduleBanner();});scheduleBanner();
 
 
+
+// All entry points prepare a draft locally; nothing is sent by this website.
+document.querySelectorAll('[data-inquiry-source]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();addInquiry('需求來源：'+a.dataset.inquirySource,a.dataset.inquiryType||null,a.dataset.inquirySource);}));
+$('#open-email-draft').addEventListener('click',()=>emailDraft(summary,true));
+$('#copy-summary').addEventListener('click',async()=>{
+ try{await navigator.clipboard.writeText(summary);$('#copy-status').textContent=JLM_I18N.t('已複製需求摘要，尚未寄出。');}
+ catch(error){$('#copy-status').textContent=JLM_I18N.t('無法自動複製，請選取上方摘要手動複製，或下載摘要。');const range=document.createRange();range.selectNodeContents($('#summary-text'));const selected=window.getSelection();selected.removeAllRanges();selected.addRange(range);}
+});
