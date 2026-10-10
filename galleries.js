@@ -2,7 +2,7 @@ window.JLM_GALLERIES = [
   {
     "id": "lion-picnic",
     "category": "outdoor",
-    "label": "PROJECT COLLABORATION / 專案合作",
+    "label": "OUTDOOR / 戶外地坪與休憩",
     "title": "雄獅文具・戶外野餐桌椅",
     "subtitle": "讓再生材料走進戶外野餐，串起桌面、座席與相聚時光。",
     "description": "捷綠盟與雄獅文具的戶外野餐桌椅專案合作，將材料應用於戶外用餐與休憩空間。長桌搭配箱式座席，沿著綠地排列，呈現桌椅如何回應多人相聚與場域配置的需求。照片記錄專案的現場使用情境。",
@@ -19,8 +19,8 @@ window.JLM_GALLERIES = [
   },
   {
     "id": "penghu",
-    "category": "outdoor",
-    "label": "CIRCULAR APPLICATION / 在地循環",
+    "category": "community",
+    "label": "COLLABORATION / 循環與生態合作",
     "title": "澎湖・回收保麗龍公共座椅",
     "subtitle": "從在地回收，到碼頭公共座椅，讓資源回到使用現場。",
     "description": "捷綠盟與澎湖觀光單位合作，將當地淨灘回收的保麗龍轉化為再生材料，製成公共座椅，再回到碼頭供民眾使用。相簿依原料回收、座椅製作與場域配置呈現，讓材料再生與實際使用的關係清楚可見。",
@@ -41,8 +41,8 @@ window.JLM_GALLERIES = [
   },
   {
     "id": "houtong",
-    "category": "outdoor",
-    "label": "COMMUNITY / 工藝合作",
+    "category": "community",
+    "label": "COLLABORATION / 循環與生態合作",
     "title": "猴硐貓屋・工藝合作計畫",
     "subtitle": "以材料與工藝，為浪貓打造棲身空間。",
     "description": "猴硐貓屋合作計畫，將材料製作應用於浪貓棲身設施。從屋體造型、入口裁切到現場配置，呈現板材加工與組裝如何回應具體的使用需求。照片收錄合作計畫的現場成果。",
@@ -62,7 +62,7 @@ window.JLM_GALLERIES = [
   {
     "id": "market",
     "category": "exhibition",
-    "label": "DISPLAY / 市集展示",
+    "label": "EXHIBITION / 展場與展示",
     "title": "市集攤位與展示設施",
     "subtitle": "從室內展售到戶外市集，呈現攤位的結構與配置。",
     "description": "以攤位框架、展示桌面與遮棚配置，呈現材料於室內展售及戶外市集的應用。兩張照片記錄不同場域，從整體排列到結構細節，提供展示設施規劃參考。",
@@ -80,7 +80,7 @@ window.JLM_GALLERIES = [
   {
     "id": "exhibition",
     "category": "exhibition",
-    "label": "EXHIBITION / 展場設計",
+    "label": "EXHIBITION / 展場與展示",
     "title": "2025 新一代設計展",
     "subtitle": "從展場全景到展示細節，讓材料串起空間。",
     "description": "展場全景、展示動線與展示台細節，呈現角材與面板如何融入空間配置。由整體走向局部，觀察材料的組合與比例。",
@@ -102,7 +102,7 @@ window.JLM_GALLERIES = [
   {
     "id": "asia",
     "category": "exhibition",
-    "label": "EXHIBITION / 展場設計",
+    "label": "EXHIBITION / 展場與展示",
     "title": "2024 亞太永續博覽會・桃園館",
     "subtitle": "以材料的線條與細節，呈現場館的設計語言。",
     "description": "從場館全貌到展面細節，觀察造型、材料與展覽資訊的配置，為展場規劃提供參考。",
@@ -126,7 +126,7 @@ window.JLM_GALLERIES = [
   {
     "id": "terrace",
     "category": "outdoor",
-    "label": "OUTDOOR / 戶外景觀",
+    "label": "OUTDOOR / 戶外地坪與休憩",
     "title": "露臺地坪・應用與施工",
     "subtitle": "從地板紋理到現場鋪設，觀察露臺材料應用。",
     "description": "收錄企業提供的露臺地坪施工照片與目錄應用展示，觀察板面紋理、鋪設與收邊配置。現場照片仍可見施工開口；各影像不表示同一工程。",
@@ -146,7 +146,7 @@ window.JLM_GALLERIES = [
   {
     "id": "platform",
     "category": "outdoor",
-    "label": "OUTDOOR / 戶外景觀",
+    "label": "OUTDOOR / 戶外地坪與休憩",
     "title": "戶外地坪與水面浮台",
     "subtitle": "從城市地坪到水面浮台，延伸戶外的使用想像。",
     "description": "收錄戶外地坪與水面浮台兩種應用，影像來自不同場景。規劃時需確認承載、支撐、固定與維護條件。",
@@ -226,7 +226,7 @@ window.JLM_GALLERIES = [
   {
     "id": "steps",
     "category": "outdoor",
-    "label": "OUTDOOR / 戶外地坪",
+    "label": "OUTDOOR / 戶外地坪與休憩",
     "title": "入口階梯與平台",
     "subtitle": "從入口動線，觀察板材鋪設與踏階收邊。",
     "description": "從入口動線，觀察板材鋪設與踏階收邊。 圖片由企業提供，照片呈現不同應用場景，個別工程名稱與供應範圍依專案確認。",
@@ -242,7 +242,7 @@ window.JLM_GALLERIES = [
   {
     "id": "pavilion",
     "category": "outdoor",
-    "label": "OUTDOOR / 休憩設施",
+    "label": "OUTDOOR / 戶外地坪與休憩",
     "title": "景觀休憩設施",
     "subtitle": "從外部配置到內部座席，呈現休憩設施的材料應用。",
     "description": "從外部配置到內部座席，呈現休憩設施的材料應用。 圖片由企業提供，照片呈現不同應用場景，個別工程名稱與供應範圍依專案確認。",
@@ -259,8 +259,8 @@ window.JLM_GALLERIES = [
   },
   {
     "id": "furniture",
-    "category": "commercial",
-    "label": "PRODUCT / 家具與收納",
+    "category": "product",
+    "label": "PRODUCT / 家具與日常物件",
     "title": "家具與收納製作",
     "subtitle": "從室內家具到收納製作，呈現板材的組合與表面細節。",
     "description": "收錄室內家具、平台、收納箱與箱式座凳的實景，觀察板材排列、組裝與使用配置。 補充活動座椅與市集陳列實景，呈現箱體在不同場景中的使用方式。",
@@ -287,8 +287,8 @@ window.JLM_GALLERIES = [
   },
   {
     "id": "modular",
-    "category": "commercial",
-    "label": "DISPLAY / 模組展示",
+    "category": "exhibition",
+    "label": "EXHIBITION / 展場與展示",
     "title": "模組展示與活動設施",
     "subtitle": "以可配置的展示結構，延伸材料的製作與使用方式。",
     "description": "以可配置的展示結構，延伸材料的製作與使用方式。 圖片由企業提供，照片呈現不同應用場景，個別工程名稱與供應範圍依專案確認。",
@@ -308,7 +308,7 @@ window.JLM_GALLERIES = [
   {
     "id": "exhibitionassembly",
     "category": "exhibition",
-    "label": "EXHIBITION / 展場配置",
+    "label": "EXHIBITION / 展場與展示",
     "title": "展場櫃台與展示配置",
     "subtitle": "從完成配置到組裝現場，看見板材如何落實於展場。",
     "description": "依完成配置、組裝現場與板件細節呈現展場應用。照片中的參展企業名稱屬現場紀錄，不代表捷綠盟與各企業的直接合作關係。",
@@ -331,8 +331,8 @@ window.JLM_GALLERIES = [
   },
   {
     "id": "desktop-products",
-    "category": "commercial",
-    "label": "PRODUCT / 產品與空間",
+    "category": "product",
+    "label": "PRODUCT / 家具與日常物件",
     "title": "桌面用品與文具",
     "subtitle": "從托盤、桌曆到識別證套與筆具，呈現材料走進日常的不同形式。",
     "description": "從托盤、桌曆到識別證套與筆具，呈現材料走進日常的不同形式。 照片呈現材料外觀、產品造型與製作細節。",
@@ -357,8 +357,8 @@ window.JLM_GALLERIES = [
   },
   {
     "id": "furniture-containers",
-    "category": "commercial",
-    "label": "PRODUCT / 產品與空間",
+    "category": "product",
+    "label": "PRODUCT / 家具與日常物件",
     "title": "小家具與容器製作",
     "subtitle": "從小凳、箱體到圓筒容器，觀察板件組合與立體結構。",
     "description": "從小凳、箱體到圓筒容器，觀察板件組合與立體結構。 照片呈現材料外觀、產品造型與製作細節。",
@@ -377,8 +377,8 @@ window.JLM_GALLERIES = [
   },
   {
     "id": "crafted-displays",
-    "category": "commercial",
-    "label": "PRODUCT / 產品與空間",
+    "category": "product",
+    "label": "PRODUCT / 家具與日常物件",
     "title": "加工造型與展示物件",
     "subtitle": "透過弧形溝槽、文字刻製與展示架，呈現材料的加工細節。",
     "description": "透過弧形溝槽、文字刻製與展示架，呈現材料的加工細節。 照片呈現材料外觀、產品造型與製作細節。",
@@ -401,8 +401,8 @@ window.JLM_GALLERIES = [
   },
   {
     "id": "beehive",
-    "category": "commercial",
-    "label": "PROJECT COLLABORATION / 專案合作",
+    "category": "community",
+    "label": "COLLABORATION / 循環與生態合作",
     "title": "蜂箱・友善蜜蜂合作計畫",
     "subtitle": "從箱體製作到養蜂現場，讓材料應用連結友善蜜蜂與環境保護。",
     "description": "蜂箱合作專案以友善蜜蜂與環境保護為方向，將材料製作導入蜂箱的箱體與構件。相簿收錄成品外觀、養蜂現場、批次製作與構件示意，呈現從產品製作到實際使用的合作過程。",
@@ -430,7 +430,7 @@ window.JLM_GALLERIES = [
   {
     "id": "landscape-rest",
     "category": "outdoor",
-    "label": "OUTDOOR / 戶外景觀",
+    "label": "OUTDOOR / 戶外地坪與休憩",
     "title": "景觀休憩設施・涼亭與座席",
     "subtitle": "從涼亭外觀到座席與地坪，呈現休憩空間的材料配置。",
     "description": "透過涼亭外觀、內部座席與地坪照片，觀察材料在景觀休憩設施中的配置與接合細節。",

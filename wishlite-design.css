@@ -143,3 +143,11 @@ body{overflow-anchor:none}
 .process-record-footer .text-link{white-space:nowrap;font-size:12px}
 @media(max-width:1000px){.process-compact .production-clips{grid-template-columns:repeat(2,minmax(0,1fr))}.process-compact .process-heading{gap:24px}}
 @media(max-width:600px){.process-compact .production-clips{grid-template-columns:1fr;gap:28px}.process-compact .process-heading{display:block;padding-top:48px;padding-bottom:26px}.process-compact .process-heading>p{margin-top:16px;font-size:13px}.process-record-footer{display:block}.process-record-footer .text-link{display:inline-block;margin-top:16px}}
+
+/* Larger paired case photography and clearer application filters */
+@media(min-width:1001px){.project-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:46px 32px}}
+.project-grid .project-card .project-image img,.project-grid .project-card:first-child .project-image img{aspect-ratio:1.6}
+.project-grid .project-card h3{font-size:clamp(21px,1.8vw,27px);line-height:1.5}
+#project-filters{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:30px}
+#project-filters button{font-size:12px;padding:10px 16px}
+@media(max-width:600px){#project-filters{gap:8px}#project-filters button{font-size:11px;padding:9px 12px}.project-grid .project-card h3{font-size:22px}}
