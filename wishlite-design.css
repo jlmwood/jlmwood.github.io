@@ -151,3 +151,6 @@ body{overflow-anchor:none}
 #project-filters{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:30px}
 #project-filters button{font-size:12px;padding:10px 16px}
 @media(max-width:600px){#project-filters{gap:8px}#project-filters button{font-size:11px;padding:9px 12px}.project-grid .project-card h3{font-size:22px}}
+
+/* Restore compact desktop case browsing */
+@media(min-width:1001px){.project-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:38px 26px}.project-grid .project-card h3{font-size:23px}}
