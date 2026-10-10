@@ -142,5 +142,79 @@ window.JLM_GALLERIES = [
       "格柵與地坪配置"
     ],
     "source": "2025 產品目錄 P17"
+  },
+  {
+    "id": "steps",
+    "category": "outdoor",
+    "label": "OUTDOOR / 戶外地坪",
+    "title": "入口階梯與平台",
+    "subtitle": "從入口動線，觀察板材鋪設與踏階收邊。",
+    "description": "從入口動線，觀察板材鋪設與踏階收邊。 圖片由企業提供，照片呈現不同應用場景，個別工程名稱與供應範圍依專案確認。",
+    "focus": "階梯、平台、踏階收邊",
+    "images": [
+      "application-real-2.jpg"
+    ],
+    "captions": [
+      "入口階梯・地板排列與踏階細節"
+    ],
+    "source": "企業提供的應用實景照片"
+  },
+  {
+    "id": "pavilion",
+    "category": "outdoor",
+    "label": "OUTDOOR / 休憩設施",
+    "title": "景觀休憩設施",
+    "subtitle": "從外部配置到內部座席，呈現休憩設施的材料應用。",
+    "description": "從外部配置到內部座席，呈現休憩設施的材料應用。 圖片由企業提供，照片呈現不同應用場景，個別工程名稱與供應範圍依專案確認。",
+    "focus": "景觀配置、座席、地坪",
+    "images": [
+      "application-real-9.jpg",
+      "application-real-6.jpg"
+    ],
+    "captions": [
+      "景觀設施外觀實景",
+      "休憩座席與地坪實景"
+    ],
+    "source": "企業提供的應用實景照片"
+  },
+  {
+    "id": "furniture",
+    "category": "commercial",
+    "label": "PRODUCT / 家具與收納",
+    "title": "家具與收納製作",
+    "subtitle": "從展示桌、收納箱到箱式座凳，觀察板材的組合方式。",
+    "description": "從展示桌、收納箱到箱式座凳，觀察板材的組合方式。 圖片由企業提供，照片呈現不同應用場景，個別工程名稱與供應範圍依專案確認。",
+    "focus": "板材組裝、收納、家具配置",
+    "images": [
+      "application-real-7.jpg",
+      "application-real-4.jpg",
+      "application-real-1.jpg"
+    ],
+    "captions": [
+      "箱式座凳・材料表面與組裝細節",
+      "開放式收納箱・側板與提把",
+      "展示桌與箱式座凳配置"
+    ],
+    "source": "企業提供的應用實景照片"
+  },
+  {
+    "id": "modular",
+    "category": "commercial",
+    "label": "DISPLAY / 模組展示",
+    "title": "模組展示與活動設施",
+    "subtitle": "以可配置的展示結構，延伸材料的製作與使用方式。",
+    "description": "以可配置的展示結構，延伸材料的製作與使用方式。 圖片由企業提供，照片呈現不同應用場景，個別工程名稱與供應範圍依專案確認。",
+    "focus": "穿孔板、展示層板、活動設施",
+    "images": [
+      "modular-enhanced.png",
+      "application-real-8.jpg",
+      "application-real-3.jpg"
+    ],
+    "captions": [
+      "模組展示架・AI 輔助影像優化版（下一張可查看原始實景）",
+      "模組展示架・掛鉤與層板配置",
+      "活動設施・桌凳與互動設備實景"
+    ],
+    "source": "企業提供實景；首張為 AI 輔助影像優化版，原照保留於第二張"
   }
 ];

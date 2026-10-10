@@ -20,3 +20,5 @@ body{background:var(--paper);font-size:15px}header{height:90px;background:rgba(2
 
 .banner-image.sunny-terrace{object-position:50% 72%}@media(max-width:700px){.banner-image.sunny-terrace{object-position:54% 62%}}
 
+
+.supplied-photo .project-image img{object-position:center 45%}#project-dialog .dialog-photo img{object-fit:contain}.supplied-photo[data-project="pavilion"] .project-image{max-height:300px}
