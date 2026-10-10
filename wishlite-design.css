@@ -172,3 +172,6 @@ body{overflow-anchor:none}
 .project-grid .project-card[data-project="beehive"] .project-image{background:#e7e9e3}
 
 .project-grid .project-card[data-project="beehive"] .project-image{aspect-ratio:1.6}.project-grid .project-card[data-project="beehive"] .project-image img{height:100%;aspect-ratio:auto}
+
+/* Focus the cover on the four cat houses */
+.project-grid .project-card[data-project="houtong"] .project-image img{object-position:50% 70%;transform:scale(1.18);transform-origin:48% 75%}
