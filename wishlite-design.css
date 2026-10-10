@@ -20,4 +20,3 @@ body{background:var(--paper);font-size:15px}header{height:90px;background:rgba(2
 
 .banner-image.sunny-terrace{object-position:50% 72%}@media(max-width:700px){.banner-image.sunny-terrace{object-position:54% 62%}}
 
-@media(max-width:700px){.banner-image.sunny-terrace{object-position:50% 50%;filter:brightness(1)}.case-banner.is-sunny .banner-shade{background:linear-gradient(180deg,rgba(15,30,22,.12),rgba(15,30,22,.38) 38%,rgba(15,30,22,.46) 64%,rgba(15,30,22,.88)),linear-gradient(90deg,rgba(15,30,22,.22),transparent)}}
