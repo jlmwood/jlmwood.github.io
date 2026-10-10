@@ -68,3 +68,9 @@ body{background:var(--paper);font-size:15px}header{height:90px;background:rgba(2
 
 /* Immediate section navigation */
 html{scroll-behavior:auto!important}
+
+/* Equal case cards preserve the pavilion silhouette */
+.project-grid .project-card:first-child{grid-column:auto}
+.project-grid .project-card .project-image img{aspect-ratio:1.5}
+.project-grid .project-card[data-project="asia"] .project-image img{object-fit:contain;background:#17201b}
+@media(min-width:1001px){.project-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
