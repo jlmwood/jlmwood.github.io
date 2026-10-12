@@ -35,7 +35,7 @@ function addInquiry(text,type=null,source='一般合作'){
  if(!sources.includes(source))sources.push(source);
  $('#inquiry-source').value=sources.join(' / ');
  $('#inquiry-result').hidden=true;
- $('#contact').scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
+ $('#contact').scrollIntoView({behavior:'instant'});
  field.focus({preventScroll:true});
 }
 $('#add-material').addEventListener('click',()=>addInquiry('希望了解：'+selection(),'材料採購','選材規格'));
