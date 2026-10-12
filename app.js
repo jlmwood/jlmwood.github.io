@@ -13,7 +13,7 @@ function updateSeries(){const data=series[chosenSeries];$('#series-number').text
 for(const color of colors){const b=document.createElement('button');b.type='button';b.style.background=color.hex;b.setAttribute('aria-label',color.name+'（螢幕示意）');b.title=color.name;b.setAttribute('aria-pressed',String(color.name===chosenColor));if(color.name===chosenColor)b.classList.add('active');b.addEventListener('click',()=>{chosenColor=color.name;$('#color-name').textContent=chosenColor;document.querySelectorAll('#swatches button').forEach(button=>{const active=button===b;button.classList.toggle('active',active);button.setAttribute('aria-pressed',String(active));});updateSelection();});$('#swatches').append(b);}
 document.querySelectorAll('#uses button').forEach(b=>b.addEventListener('click',()=>{chosenSeries=b.dataset.use;document.querySelectorAll('#uses button').forEach(button=>{const active=button===b;button.classList.toggle('active',active);button.setAttribute('aria-pressed',String(active));});updateSeries();}));
 $('#spec').addEventListener('change',updateSelection);updateSeries();
-function emailDraftUrl(text,keepText=false){return 'mailto:wishlite1111@gmail.com?subject='+encodeURIComponent(JLM_I18N.t('捷綠盟合作需求'))+'&body='+encodeURIComponent(keepText?text:JLM_I18N.t(text));}
+function emailDraftUrl(text,keepText=false){return 'mailto:jlmwood.tw@gmail.com?subject='+encodeURIComponent(JLM_I18N.t('捷綠盟合作需求'))+'&body='+encodeURIComponent(keepText?text:JLM_I18N.t(text));}
 function emailDraft(text,keepText=false){window.location.href=emailDraftUrl(text,keepText);}
 let inquiryTypeChosen=false;
 const inquiryType=$('#inquiry [name=type]');
