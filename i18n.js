@@ -65,3 +65,5 @@ document.addEventListener('DOMContentLoaded',()=>{
  jlmObserver=new MutationObserver(()=>jlmTranslatePage());
  jlmTranslatePage();
 });
+
+Object.assign(JLM_EN,{"07 / 媒體報導":"07 / MEDIA COVERAGE","媒體報導":"Media","媒體專訪":"Media Interview"});
