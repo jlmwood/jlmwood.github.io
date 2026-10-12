@@ -43,12 +43,10 @@ $('#menu').addEventListener('click',()=>{const open=$('#navigation').classList.t
 document.querySelectorAll('#navigation a').forEach(a=>a.addEventListener('click',()=>{$('#navigation').classList.remove('open');$('#menu').setAttribute('aria-expanded','false');}));
 const projects=Object.fromEntries(window.JLM_GALLERIES.map(g=>[g.id,g]));
 let currentProject='',photoIndex=0,featuredProject='exhibition',touchStart=null;
-let allCasesExpanded=false;
-$('#show-all-cases').addEventListener('click',()=>{allCasesExpanded=!allCasesExpanded;document.querySelectorAll('#project-filters button').forEach(b=>{const active=b.dataset.filter==='all';b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active));});document.querySelectorAll('.project-card').forEach((card,i)=>card.hidden=!allCasesExpanded&&i>=6);$('#show-all-cases').textContent=allCasesExpanded?'收起案例 ↑':'查看全部案例（20 組） ↓';$('#show-all-cases').setAttribute('aria-expanded',String(allCasesExpanded));$('#gallery-status').textContent=allCasesExpanded?'顯示全部 20 組圖集':'精選 6 組案例';});
 document.querySelectorAll('#project-filters button').forEach(b=>b.addEventListener('click',()=>{
  document.querySelectorAll('#project-filters button').forEach(button=>{const active=button===b;button.classList.toggle('active',active);button.setAttribute('aria-pressed',String(active));});
  let visible=0;document.querySelectorAll('.project-card').forEach(card=>{card.hidden=b.dataset.filter!=='all'&&card.dataset.category!==b.dataset.filter;if(!card.hidden)visible++;});
- allCasesExpanded=true;$('#show-all-cases').textContent='收起案例 ↑';$('#show-all-cases').setAttribute('aria-expanded','true');$('#gallery-status').textContent='顯示 '+visible+' 組圖集';
+ $('#gallery-status').textContent='顯示 '+visible+' 組圖集';
 }));
 function showPhoto(index){
  const p=projects[currentProject];photoIndex=(index+p.images.length)%p.images.length;
