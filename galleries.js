@@ -4,16 +4,16 @@ window.JLM_GALLERIES = [
   "category": "outdoor",
   "label": "OUTDOOR / 戶外地坪與休憩",
   "title": "森林步道 × 休憩平台",
-  "subtitle": "即將完工・串接林間步道、休憩平台與座席。",
-  "description": "森林步道與休憩平台專案即將完工，結合步道地坪、平台及座席，呈現材料在林間休憩空間的應用。目前圖片為完工預覽，完工後將補上現場照片。",
+  "subtitle": "串接林間步道、休憩平台與座席。",
+  "description": "結合步道地坪、休憩平台與座席配置，讓材料沿著林間地形延伸，串接行走與停留的空間。",
   "focus": "步道地坪、休憩平台、座席配置",
   "images": [
     "forest-walkway.png"
   ],
   "captions": [
-    "森林步道 × 休憩平台・完工預覽"
+    "森林步道 × 休憩平台"
   ],
-  "source": "企業確認之即將完工專案；AI 輔助完工預覽圖"
+  "source": "企業提供專案資料；AI 輔助影像"
 },
   {
     "id": "lion-picnic",
