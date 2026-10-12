@@ -8,10 +8,16 @@ window.JLM_GALLERIES = [
   "description": "結合步道地坪、休憩平台與座席配置，讓材料沿著林間地形延伸，串接行走與停留的空間。",
   "focus": "步道地坪、休憩平台、座席配置",
   "images": [
-    "forest-walkway.png"
+    "forest-walkway.png",
+    "forest-walkway-2.png",
+    "forest-walkway-3.png",
+    "forest-walkway-4.png"
   ],
   "captions": [
-    "森林步道 × 休憩平台"
+    "森林步道 × 休憩平台",
+    "林間步道與欄杆配置",
+    "休憩平台與座席全景",
+    "座席與地坪紋理細節"
   ],
   "source": "企業提供專案資料；AI 輔助影像"
 },
