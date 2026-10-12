@@ -8,11 +8,11 @@ window.JLM_GALLERIES = [
   "description": "從小木屋外觀到廊下休憩空間，呈現外牆板面、露臺地坪與收邊細節，探索材料與自然環境的搭配方式。",
   "focus": "外牆板面、廊下空間、露臺地坪、收邊細節",
   "images": [
-    "forest-cabin-1.png",
-    "forest-cabin-2.png",
-    "forest-cabin-3.png",
-    "forest-cabin-4.png",
-    "forest-cabin-5.png"
+    "forest-cabin-material-1.png",
+    "forest-cabin-material-2.png",
+    "forest-cabin-material-3.png",
+    "forest-cabin-material-4.png",
+    "forest-cabin-material-5.png"
   ],
   "captions": [
     "森林小木屋・外觀與露臺全景",
