@@ -434,12 +434,14 @@ window.JLM_GALLERIES = [
     "images": [
       "product-supplied-04.jpg",
       "product-supplied-06.jpg",
-      "product-supplied-05.jpg"
+      "product-supplied-05.jpg",
+      "essential-oil-box.jpg"
     ],
     "captions": [
       "小凳造型與表面質感",
       "圓筒容器的板條配置",
-      "箱體的接合與開口細節"
+      "箱體的接合與開口細節",
+      "精油收納盒・凹槽與磁吸盒蓋細節"
     ],
     "source": "企業提供產品實拍照片"
   },
