@@ -81,3 +81,5 @@ document.addEventListener('DOMContentLoaded',()=>{
 });
 
 Object.assign(JLM_EN,{"07 / 媒體報導":"07 / MEDIA COVERAGE","媒體報導":"Media","媒體專訪":"Media Interview"});
+
+Object.assign(JLM_EN,{"森林小木屋": "Forest Cabin", "以外牆、廊下與露臺地坪，串接林間生活空間。": "Exterior cladding, a sheltered porch and terrace decking connect living spaces in the forest.", "從小木屋外觀到廊下休憩空間，呈現外牆板面、露臺地坪與收邊細節，探索材料與自然環境的搭配方式。": "From the cabin exterior to the sheltered porch, explore wall cladding, terrace decking and edge details in a natural setting.", "外牆板面、廊下空間、露臺地坪、收邊細節": "Exterior cladding, sheltered porch, terrace decking and edge details", "森林小木屋・外觀與露臺全景": "Forest cabin · Exterior and terrace overview", "側面外牆與入口階梯": "Side cladding and entrance steps", "廊下休憩空間與地坪配置": "Sheltered porch and decking layout", "正面立面與露臺配置": "Front elevation and terrace layout", "外牆紋理與轉角收邊細節": "Cladding texture and corner details", "企業提供應用構想；AI 輔助影像": "Company-supplied application concept; AI-assisted imagery"});
