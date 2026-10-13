@@ -18,6 +18,7 @@ Object.assign(JLM_EN,{"東森財經新聞": "EBC Financial News", "打造城市�
 Object.assign(JLM_EN,{"2024亞太永續博覽會": "2024 Asia-Pacific Sustainability Expo", "城市綠色循環展區－桃園館": "Urban Green Circularity Zone – Taoyuan Pavilion", "2024亞太永續博覽會：城市綠色循環展區－桃園館": "2024 Asia-Pacific Sustainability Expo: Urban Green Circularity Zone – Taoyuan Pavilion"});
 Object.assign(JLM_EN,{"觀看報導":"Watch Report"});
 Object.assign(JLM_EN,{"板材色系與堆疊":"Board colors and stacked materials"});
+Object.assign(JLM_EN,{"雨後地坪行走情境": "Walking on rain-wet decking", "鞋底接觸與表面水珠": "Shoe contact and surface water droplets", "濕地坪與材料紋理": "Wet decking and material texture", "AI 情境示意｜濕地坪行走畫面，非止滑檢測紀錄。": "AI-generated concept imagery | Wet decking use scenes, not slip-resistance test records.", "上一張地坪示意圖": "Previous decking concept image", "下一張地坪示意圖": "Next decking concept image"});
 const JLM_KEYS=Object.keys(JLM_EN).filter(k=>k.length>1).sort((a,b)=>b.length-a.length);
 const JLM_EXPRESSION=new RegExp(JLM_KEYS.map(k=>k.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')).join('|'),'g');
 window.JLM_I18N={language:'zh',t(text){if(this.language!=='en')return text;if(JLM_EN[text])return JLM_EN[text];return String(text).replace(JLM_EXPRESSION,k=>JLM_EN[k]).replace(/顯示 (\d+) 組圖集/g,'Showing $1 galleries').replace(/查看第 (\d+) 張：/g,'View photo $1: ');}};
