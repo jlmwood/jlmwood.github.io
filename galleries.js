@@ -1,50 +1,50 @@
 window.JLM_GALLERIES = [
-{
-  "id": "forest-cabin",
-  "category": "outdoor",
-  "label": "OUTDOOR / 戶外地坪與休憩",
-  "title": "森林小木屋",
-  "subtitle": "以外牆、廊下與露臺地坪，串接林間生活空間。",
-  "description": "從小木屋外觀到廊下休憩空間，呈現外牆板面、露臺地坪與收邊細節，探索材料與自然環境的搭配方式。",
-  "focus": "外牆板面、廊下空間、露臺地坪、收邊細節",
-  "images": [
-    "forest-cabin-material-1.png",
-    "forest-cabin-material-2.png",
-    "forest-cabin-material-3.png",
-    "forest-cabin-material-4.png",
-    "forest-cabin-material-5.png"
-  ],
-  "captions": [
-    "森林小木屋・外觀與露臺全景",
-    "側面外牆與入口階梯",
-    "廊下休憩空間與地坪配置",
-    "正面立面與露臺配置",
-    "外牆紋理與轉角收邊細節"
-  ],
-  "source": "企業提供應用構想；AI 輔助影像"
-},
-{
-  "id": "forest-walkway",
-  "category": "outdoor",
-  "label": "OUTDOOR / 戶外地坪與休憩",
-  "title": "森林步道 × 休憩平台",
-  "subtitle": "串接林間步道、休憩平台與座席。",
-  "description": "結合步道地坪、休憩平台與座席配置，讓材料沿著林間地形延伸，串接行走與停留的空間。",
-  "focus": "步道地坪、休憩平台、座席配置",
-  "images": [
-    "forest-walkway.png",
-    "forest-walkway-2.png",
-    "forest-walkway-3.png",
-    "forest-walkway-4.png"
-  ],
-  "captions": [
-    "森林步道 × 休憩平台",
-    "林間步道與欄杆配置",
-    "休憩平台與座席全景",
-    "座席與地坪紋理細節"
-  ],
-  "source": "企業提供專案資料；AI 輔助影像"
-},
+  {
+    "id": "forest-cabin",
+    "category": "outdoor",
+    "label": "OUTDOOR / 戶外地坪與休憩",
+    "title": "森林小木屋",
+    "subtitle": "以外牆、廊下與露臺地坪，串接林間生活空間。",
+    "description": "從小木屋外觀到廊下休憩空間，呈現外牆板面、露臺地坪與收邊細節，探索材料與自然環境的搭配方式。",
+    "focus": "外牆板面、廊下空間、露臺地坪、收邊細節",
+    "images": [
+      "forest-cabin-material-1.png",
+      "forest-cabin-material-2.png",
+      "forest-cabin-material-3.png",
+      "forest-cabin-material-4.png",
+      "forest-cabin-material-5.png"
+    ],
+    "captions": [
+      "森林小木屋・外觀與露臺全景",
+      "側面外牆與入口階梯",
+      "廊下休憩空間與地坪配置",
+      "正面立面與露臺配置",
+      "外牆紋理與轉角收邊細節"
+    ],
+    "source": "企業提供應用構想；AI 輔助影像"
+  },
+  {
+    "id": "forest-walkway",
+    "category": "outdoor",
+    "label": "OUTDOOR / 戶外地坪與休憩",
+    "title": "森林步道 × 休憩平台",
+    "subtitle": "串接林間步道、休憩平台與座席。",
+    "description": "結合步道地坪、休憩平台與座席配置，讓材料沿著林間地形延伸，串接行走與停留的空間。",
+    "focus": "步道地坪、休憩平台、座席配置",
+    "images": [
+      "forest-walkway.png",
+      "forest-walkway-2.png",
+      "forest-walkway-3.png",
+      "forest-walkway-4.png"
+    ],
+    "captions": [
+      "森林步道 × 休憩平台",
+      "林間步道與欄杆配置",
+      "休憩平台與座席全景",
+      "座席與地坪紋理細節"
+    ],
+    "source": "企業提供專案資料；AI 輔助影像"
+  },
   {
     "id": "lion-picnic",
     "category": "outdoor",
@@ -135,15 +135,35 @@ window.JLM_GALLERIES = [
       "project-000.jpg",
       "project-007.jpg",
       "project-003.jpg",
-      "project-005.jpg"
+      "project-005.jpg",
+      "yodex-added-1.jpg",
+      "yodex-added-2.jpg",
+      "yodex-added-3.jpg",
+      "yodex-added-4.jpg",
+      "yodex-added-5.jpg",
+      "yodex-added-6.jpg",
+      "yodex-added-7.jpg",
+      "yodex-added-8.jpg",
+      "yodex-added-9.jpg",
+      "yodex-added-10.jpg"
     ],
     "captions": [
       "展場整體配置",
       "展示動線與框架",
       "展場分區",
-      "展示台與材料細節"
+      "展示台與材料細節",
+      "現場觀眾與模組座席",
+      "階梯與休憩展示近景",
+      "產學合作展區入口",
+      "模組座席與展場框架",
+      "展區動線與入口全景",
+      "展場俯瞰與觀眾動線",
+      "YODEX TALKs 講座區與展示方塊",
+      "材料樣本與展示台",
+      "作品展示與框架配置",
+      "階梯板件與展台細節"
     ],
-    "source": "2025 產品目錄 P14–15"
+    "source": "2025 產品目錄 P14–15；企業提供展場實拍"
   },
   {
     "id": "asia",
