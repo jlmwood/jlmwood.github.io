@@ -162,6 +162,30 @@ window.JLM_GALLERIES = [
     "source": "2025 產品目錄 P14–15；企業提供展場實拍"
   },
   {
+    "id": "yodex-2023",
+    "category": "exhibition",
+    "label": "EXHIBITION / 展場與展示",
+    "title": "2023 新一代設計展",
+    "subtitle": "以弧形展台與展牆，串接作品與空間。",
+    "description": "透過弧形展台、展牆與植栽配置，呈現材料如何融入展示空間，串接作品陳列與參觀動線。",
+    "focus": "弧形展台、展牆、展示動線",
+    "images": [
+      "yodex-2023-1.jpg",
+      "yodex-2023-2.jpg",
+      "yodex-2023-3.jpg",
+      "yodex-2023-4.jpg",
+      "yodex-2023-5.jpg"
+    ],
+    "captions": [
+      "弧形展台與展區全景",
+      "植栽與弧形展示配置",
+      "展牆與作品展示細節",
+      "弧形動線與展示空間",
+      "圓弧展台與展牆搭配"
+    ],
+    "source": "企業提供 2023 新一代設計展實拍"
+  },
+  {
     "id": "asia",
     "category": "exhibition",
     "label": "EXHIBITION / 展場與展示",
