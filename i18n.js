@@ -16,6 +16,7 @@ Object.assign(JLM_EN,{"襯板斷面與色系": "Cladding profiles and colors", "
 Object.assign(JLM_EN,{"桃園市楊梅區民富路一段136巷2號": "No. 2, Ln. 136, Sec. 1, Minfu Rd., Yangmei Dist., Taoyuan City, Taiwan", "統一編號：90134698": "Business Registration No.: 90134698"});
 Object.assign(JLM_EN,{"東森財經新聞": "EBC Financial News", "打造城市永續生活圈": "Building a Sustainable Urban Living Network", "桃園落實永續作為，打造城市永續生活圈。": "Taoyuan puts sustainability into practice to build a sustainable urban living network.", "東森財經新聞：桃園城市永續生活圈": "EBC Financial News: Sustainable urban living in Taoyuan"});
 Object.assign(JLM_EN,{"2024亞太永續博覽會": "2024 Asia-Pacific Sustainability Expo", "城市綠色循環展區－桃園館": "Urban Green Circularity Zone – Taoyuan Pavilion", "2024亞太永續博覽會：城市綠色循環展區－桃園館": "2024 Asia-Pacific Sustainability Expo: Urban Green Circularity Zone – Taoyuan Pavilion"});
+Object.assign(JLM_EN,{"觀看報導":"Watch Report"});
 const JLM_KEYS=Object.keys(JLM_EN).filter(k=>k.length>1).sort((a,b)=>b.length-a.length);
 const JLM_EXPRESSION=new RegExp(JLM_KEYS.map(k=>k.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')).join('|'),'g');
 window.JLM_I18N={language:'zh',t(text){if(this.language!=='en')return text;if(JLM_EN[text])return JLM_EN[text];return String(text).replace(JLM_EXPRESSION,k=>JLM_EN[k]).replace(/顯示 (\d+) 組圖集/g,'Showing $1 galleries').replace(/查看第 (\d+) 張：/g,'View photo $1: ');}};
