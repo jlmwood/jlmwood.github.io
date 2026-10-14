@@ -102,3 +102,31 @@ $('#copy-summary').addEventListener('click',async()=>{
  try{await navigator.clipboard.writeText(summary);$('#copy-status').textContent=JLM_I18N.t('已複製需求摘要，尚未寄出。');}
  catch(error){$('#copy-status').textContent=JLM_I18N.t('無法自動複製，請選取上方摘要手動複製，或下載摘要。');const range=document.createRange();range.selectNodeContents($('#summary-text'));const selected=window.getSelection();selected.removeAllRanges();selected.addRange(range);}
 });
+
+// Preserve this tab's inquiry while visitors explore product and application pages.
+const JLM_DRAFT_KEY='jlm-inquiry-tab-draft-v1';
+function saveInquiryDraft(){
+ try{const values={};for(const name of ['name','company','email','type','message','source']){const field=$('#inquiry [name="'+name+'"]');if(field)values[name]=field.value;}
+ sessionStorage.setItem(JLM_DRAFT_KEY,JSON.stringify({values,chosen:inquiryTypeChosen,savedAt:Date.now()}));}catch(error){}
+}
+try{const draft=JSON.parse(sessionStorage.getItem(JLM_DRAFT_KEY)||'null');
+ if(draft&&draft.values&&typeof draft.savedAt==='number'&&Date.now()-draft.savedAt<86400000){
+  for(const name of ['name','company','email','message','source']){const field=$('#inquiry [name="'+name+'"]');const value=draft.values[name];if(field&&(name==='source'||!field.value.trim())&&typeof value==='string'&&value.length<=(field.maxLength>0?field.maxLength:3000))field.value=value;}
+  if([...inquiryType.options].some(o=>o.value===draft.values.type))inquiryType.value=draft.values.type;
+  inquiryTypeChosen=Boolean(draft.chosen);
+ }
+}catch(error){}
+$('#inquiry').addEventListener('input',saveInquiryDraft);$('#inquiry').addEventListener('change',saveInquiryDraft);
+window.addEventListener('pagehide',saveInquiryDraft);
+const JLM_ENTRY_INTENTS={"boards": {"type": "材料採購", "source": "再生板材供應", "text": "用途與環境：\n材料系列或型號：\n尺寸與數量：\n色系與表面：\n預計時程與地點："}, "ps-materials": {"type": "材料採購", "source": "回收 PS 建材", "text": "應用部位：\n室內或戶外：\n材料尺寸與數量：\n需要確認的產品文件：\n預計時程："}, "cnc": {"type": "裁切／CNC 加工", "source": "再生材料 CNC 加工", "text": "產品用途：\n材料型號或厚度：\n零件圖面與加工需求：\n尺寸、公差與數量：\n預計時程與地點："}, "cabin": {"type": "空間／展場應用", "source": "小木屋與休憩空間", "text": "材料部位（外牆／廊下／露臺／室內）：\n配置圖與面積：\n基底、支撐與固定條件：\n材料供應與工程分工：\n預計時程："}, "walkway": {"type": "空間／展場應用", "source": "步道與景觀平台", "text": "步道或平台位置：\n路徑、寬度與面積：\n基座、支撐及排水條件：\n預估材料數量：\n預計時程："}, "exhibition": {"type": "空間／展場應用", "source": "展場與展台材料應用", "text": "展區與構件用途：\n配置圖及外形尺寸：\n加工、接合與拆裝需求：\n預估數量與展期：\n運輸與交付地點："}, "commercial": {"type": "空間／展場應用", "source": "水灣商業空間參考", "text": "預計應用部位：\n牆面或平台尺寸：\n基底與固定條件：\n色系、表面與加工：\n工程分工與時程："}, "JLM-C-6015600": {"type": "材料採購", "source": "規格參考 JLM-C-6015600", "text": "希望了解：板材 JLM-C-6015600 / 15 × 600 mm\n用途與環境：\n供貨長度與數量：\n加工需求：\n預計時程與地點："}, "JLM-A-6010090": {"type": "材料採購", "source": "規格參考 JLM-A-6010090", "text": "希望了解：襯板 JLM-A-6010090 / 10 × 90 mm\n用途與環境：\n供貨長度與數量：\n加工需求：\n預計時程與地點："}, "JLM-A-6030040": {"type": "材料採購", "source": "規格參考 JLM-A-6030040", "text": "希望了解：角材 JLM-A-6030040 / 30 × 40 mm\n用途與環境：\n供貨長度與數量：\n加工需求：\n預計時程與地點："}};
+document.addEventListener('DOMContentLoaded',function(){
+const entryKey=new URLSearchParams(window.location.search).get('inquiry');
+if(entryKey&&Object.prototype.hasOwnProperty.call(JLM_ENTRY_INTENTS,entryKey)){
+ const entry=JLM_ENTRY_INTENTS[entryKey];
+ const existingSources=$('#inquiry-source').value.split(' / ');
+ if(!existingSources.includes(entry.source))addInquiry(entry.text,entry.type,entry.source);
+ else{$('#inquiry-prefill-status').textContent=JLM_I18N.t('需求草稿已還原，原內容已保留。');$('#contact').scrollIntoView({behavior:'instant'});$('#message').focus({preventScroll:true});}
+ saveInquiryDraft();
+}
+
+},{once:true});
