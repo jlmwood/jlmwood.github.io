@@ -1,0 +1,26 @@
+/* Local candidate: white editorial material entry, 2026-11-16. */
+#materials{padding-top:0}
+#materials .material-entry-white{position:relative;background:#fff;box-shadow:0 0 0 100vmax #fff;clip-path:inset(0 -100vmax);padding:80px 0 64px;margin-bottom:48px}
+#materials .material-entry-white .section-heading{align-items:end;gap:40px;margin-bottom:38px}
+#materials .material-entry-white .eyebrow{color:#65736a;margin-bottom:18px}
+#materials .material-entry-white h2{font-size:clamp(30px,3vw,42px);line-height:1.5;margin-bottom:0;color:#243b30}
+#materials .material-entry-white .section-heading>p{color:#657069;font-size:14px;line-height:1.9;margin-bottom:3px}
+#materials .material-series-grid{gap:32px;margin-bottom:0}
+#materials .material-series-card img{aspect-ratio:4/3;border-radius:0;box-shadow:none;background:#f5f5f2}
+#materials .material-series-card h3{margin:22px 0 6px;font-size:25px;line-height:1.5}
+#materials .material-series-card p{margin-bottom:16px;font-size:14px;color:#667168}
+#materials .series-card-actions{border-top:0;padding-top:0;gap:12px;flex-wrap:wrap;justify-content:space-between}
+#materials .series-card-actions a{order:-1;font-size:14px;font-weight:600;border-bottom:1px solid #a9b5ad;padding:8px 0;min-height:44px}
+#materials .series-card-actions button{font-size:13px;color:#667168;font-weight:400;min-height:44px}
+#materials .series-card-actions a:hover{color:#102f23;border-color:#102f23}
+#materials .material-series-card.is-selected .series-card-actions button{color:#193e32}
+@media(max-width:700px){
+#materials .material-entry-white{padding:44px 0 40px;margin-bottom:30px}
+#materials .material-entry-white .section-heading{display:block;margin-bottom:26px}
+#materials .material-entry-white h2{font-size:30px}
+#materials .material-entry-white .section-heading>p{font-size:13px;margin-top:16px}
+#materials .material-series-grid{gap:32px}
+#materials .material-series-card img{aspect-ratio:16/10}
+#materials .material-series-card h3{font-size:23px;margin-top:16px}
+#materials .material-series-card p{margin-bottom:8px}
+}
