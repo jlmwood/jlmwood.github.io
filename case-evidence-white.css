@@ -1,0 +1,34 @@
+/* Approved direction, local preview: cases and evidence on white. */
+#projects,#evidence{background:#fff;padding-top:80px;padding-bottom:64px}
+#evidence{position:relative;border-top:0;box-shadow:0 0 0 100vmax #fff;clip-path:inset(0 -100vmax)}
+#projects .section-heading{align-items:end;gap:40px;margin-bottom:38px}
+#projects .section-heading h2,#evidence h2{font-size:clamp(30px,3vw,42px);line-height:1.5;margin-bottom:0;color:#243b30}
+#projects .section-heading>p{font-size:14px;color:#657069;line-height:1.9;margin-bottom:3px}
+#projects>.section-heading .eyebrow,#evidence>.eyebrow{color:#65736a;margin-bottom:18px}
+#projects .case-editorial,#projects .featured-scene,#projects .project-card,#projects .collaboration-films{background:transparent;box-shadow:none}
+#projects .case-editorial>img,#projects #case-detail-image,#projects .project-image,#projects .inspiration-track img{border-radius:0}
+#projects .case-editorial-detail{gap:36px;padding:28px 0}
+#projects .case-editorial .featured-content h3{font-size:clamp(24px,2.3vw,32px)}
+#projects .jlm-arrow{box-shadow:none;border-color:#fff}
+#projects .jlm-carousel-status,#projects>.note{color:#667168}
+#projects .project-filters button{box-shadow:none}
+#evidence .evidence-doc-grid{gap:32px;margin-top:38px}
+#evidence .evidence-paper{background:#f5f6f3;padding:22px}
+#evidence .evidence-paper img{object-fit:contain;box-shadow:0 2px 6px #172c2010}
+#evidence .evidence-document figcaption{padding-top:18px;font-size:16px}
+#evidence .evidence-document figcaption strong{font-weight:600;line-height:1.7}
+#evidence .evidence-document figcaption p{font-size:14px;color:#667168;margin-top:6px}
+#evidence .evidence-contact{border-color:#e3e7e3;margin-top:32px;padding-top:24px}
+#evidence .evidence-contact p,#evidence .evidence-contact a{font-size:14px}
+@media(max-width:700px){
+#projects,#evidence{padding-top:44px;padding-bottom:40px}
+#projects .section-heading{display:block;margin-bottom:26px}
+#projects .section-heading h2,#evidence h2{font-size:30px}
+#projects .section-heading>p{font-size:13px;margin-top:16px}
+#projects .case-editorial-detail{gap:20px;padding:22px 0}
+#evidence .evidence-doc-grid{gap:26px 16px;margin-top:26px}
+#evidence .evidence-paper{padding:12px}
+#evidence .evidence-document figcaption{font-size:15px;padding-top:12px}
+#evidence .evidence-document figcaption p{font-size:13px}
+#evidence .evidence-contact{margin-top:26px;padding-top:20px}
+}
