@@ -1,0 +1,22 @@
+/* Catalog entry: white editorial presentation; reader and media unchanged. */
+#faq.catalog-redesign{background:#fff;box-shadow:0 0 0 100vmax #fff;clip-path:inset(0 -100vmax);padding-top:72px;padding-bottom:72px}
+#faq .catalog-purpose{background:#fff;border:0;gap:48px;align-items:center}
+#faq .catalog-feature-copy{padding:18px 0;background:#fff}
+#faq .catalog-feature-copy h2{color:#243b30;font-size:clamp(32px,3.1vw,44px);line-height:1.5;margin-bottom:20px}
+#faq .eyebrow{color:#65736a;margin-bottom:22px}
+#faq .catalog-feature-description{color:#657069;font-size:14px;line-height:1.9}
+#faq .catalog-content-list,#faq .catalog-content-list p,#faq .catalog-next-step{border-color:#e3e7e2}
+#faq .catalog-content-list small,#faq .catalog-next-step p,#faq .catalog-format{color:#657069}
+#faq .catalog-actions{gap:18px 26px}
+#faq .catalog-preview{min-height:44px;display:inline-flex;align-items:center}
+#faq .catalog-next-step{margin-top:26px;padding-top:20px}
+@media(max-width:900px){#faq .catalog-purpose{gap:30px}}
+@media(max-width:700px){
+#faq.catalog-redesign{padding-top:40px;padding-bottom:44px}
+#faq .catalog-purpose{gap:26px}
+#faq .catalog-feature-copy{padding:0}
+#faq .catalog-feature-copy h2{font-size:32px;margin-bottom:16px}
+#faq .eyebrow{margin-bottom:16px}
+#faq .catalog-content-list p{padding:12px 0}
+#faq .catalog-actions{gap:16px 22px}
+}
