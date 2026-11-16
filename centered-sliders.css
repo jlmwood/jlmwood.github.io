@@ -1,0 +1,18 @@
+/* Shared, non-autoplay carousel for films, cases and material photographs. */
+.jlm-carousel{position:relative;--slide-width:56%;--side-space:22%;margin:28px 0}
+.jlm-carousel .jlm-track{display:flex!important;gap:0!important;overflow-x:auto!important;scroll-snap-type:x mandatory;scroll-padding-inline:var(--side-space);padding:18px 0 24px!important;scrollbar-width:none;align-items:start;overscroll-behavior-x:contain;scroll-behavior:smooth}
+.jlm-track::-webkit-scrollbar{display:none}
+.jlm-track::before,.jlm-track::after{content:"";display:block;flex:0 0 var(--side-space)}
+.jlm-carousel .jlm-track>.jlm-slide{flex:0 0 var(--slide-width)!important;min-width:0!important;max-width:none!important;margin:0!important;padding:0 14px!important;scroll-snap-align:center!important;transform:scale(.88);transform-origin:center center;transition:transform .28s ease,opacity .28s ease;opacity:.7;grid-column:auto!important}
+.jlm-carousel .jlm-track>.jlm-slide.is-current{transform:scale(1);opacity:1}
+.jlm-carousel .jlm-track>.jlm-slide[hidden]{display:none!important}
+.jlm-carousel .project-image img,.jlm-carousel .project-card:first-child .project-image img,.jlm-carousel .material-evidence-grid img{width:100%;height:auto!important;aspect-ratio:16/10!important;object-fit:cover}
+.jlm-carousel .project-card h3{font-size:23px!important;margin:14px 0 8px}
+.jlm-carousel .jlm-arrow{position:absolute;top:36%;z-index:3;width:48px;height:48px;min-height:48px;padding:0;border:1px solid #f6f4ed;background:#173d31;color:white;border-radius:50%;font-size:25px;display:grid;place-items:center;cursor:pointer;box-shadow:0 2px 10px #0002}
+.jlm-carousel .jlm-arrow.prev{left:8px}.jlm-carousel .jlm-arrow.next{right:8px}.jlm-carousel .jlm-arrow:disabled{opacity:.35;cursor:default}
+.jlm-carousel .jlm-carousel-status{text-align:center;color:#657063;font-size:13px;margin:0;letter-spacing:.06em}
+.jlm-video-poster{display:block;position:relative;width:100%;padding:0;border:0;background:#173d31;color:white;aspect-ratio:16/9;overflow:hidden;cursor:pointer}
+.jlm-video-poster img{width:100%;height:100%;object-fit:cover}.jlm-video-poster span{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:#173d31e6;border:1px solid #fff;border-radius:50%;width:58px;height:58px;display:grid;place-items:center;font-size:23px}
+.jlm-carousel .collaboration-films-grid iframe{aspect-ratio:16/9;width:100%;height:auto}
+@media(max-width:700px){.jlm-carousel{--slide-width:82%;--side-space:9%;margin:20px -12px}.jlm-carousel .jlm-track>.jlm-slide{padding:0 6px!important;transform:scale(.92)}.jlm-carousel .jlm-arrow{width:44px;height:44px;min-height:44px;top:26%}.jlm-carousel .jlm-arrow.prev{left:0}.jlm-carousel .jlm-arrow.next{right:0}.jlm-carousel .project-card h3{font-size:20px!important}.jlm-carousel .collaboration-films-grid h4{font-size:20px}}
+@media(prefers-reduced-motion:reduce){.jlm-carousel .jlm-track{scroll-behavior:auto}.jlm-carousel .jlm-slide{transition:none!important}}
