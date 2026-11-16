@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   const title=frame.title;const src=frame.src;
   const g=groups.find(g=>(i===0?/雄獅/.test(g.title):i===1?/澎湖/.test(g.title):/亞太/.test(g.title)));
   const poster=document.createElement('button');poster.type='button';poster.className='jlm-video-poster';poster.setAttribute('aria-label','播放影片：'+title);
-  const img=document.createElement('img');img.src=g?'assets/'+g.images[0]:covers[i];img.alt=title;const icon=document.createElement('span');icon.textContent='▶';icon.setAttribute('aria-hidden','true');poster.append(img,icon);
+  const img=document.createElement('img');img.loading='lazy';window.jlmImage(img,g?'assets/'+g.images[0]:covers[i],'(max-width: 600px) 85vw, 550px');img.alt=title;const icon=document.createElement('span');icon.textContent='▶';icon.setAttribute('aria-hidden','true');poster.append(img,icon);
   frame.replaceWith(poster);poster.addEventListener('click',()=>{frame.src=src+(src.includes('?')?'&':'?')+'autoplay=1';poster.replaceWith(frame);});
   article.addEventListener('carousel:inactive',()=>{if(frame.isConnected){frame.src='about:blank';frame.replaceWith(poster);}});
  });

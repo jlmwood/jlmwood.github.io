@@ -50,7 +50,7 @@ document.querySelectorAll('#project-filters button').forEach(b=>b.addEventListen
 }));
 function showPhoto(index){
  const p=projects[currentProject];photoIndex=(index+p.images.length)%p.images.length;
- const image=$('#dialog-image');image.src='assets/'+p.images[photoIndex];image.alt=p.title+'・'+p.captions[photoIndex];
+ const image=$('#dialog-image');window.jlmImage?window.jlmImage(image,'assets/'+p.images[photoIndex]):image.src='assets/'+p.images[photoIndex];image.alt=p.title+'・'+p.captions[photoIndex];
  $('#photo-counter').textContent=String(photoIndex+1).padStart(2,'0')+' / '+String(p.images.length).padStart(2,'0');
  $('#photo-caption').textContent=p.captions[photoIndex];
  document.querySelectorAll('#photo-thumbnails button').forEach((b,i)=>{b.classList.toggle('active',i===photoIndex);b.setAttribute('aria-pressed',String(i===photoIndex));});
@@ -59,13 +59,13 @@ function openProject(id){
  currentProject=id;const p=projects[id];
  $('#dialog-label').textContent=p.label;$('#dialog-title').textContent=p.title;$('#dialog-description').textContent=p.description;
  $('#dialog-focus').textContent=p.focus;$('#dialog-source').textContent=p.source;
- $('#photo-thumbnails').replaceChildren(...p.images.map((file,i)=>{const b=document.createElement('button');b.type='button';b.setAttribute('aria-label','查看第 '+(i+1)+' 張：'+p.captions[i]);const img=document.createElement('img');img.src='assets/'+file;img.alt='';b.append(img);b.addEventListener('click',()=>showPhoto(i));return b;}));
+ $('#photo-thumbnails').replaceChildren(...p.images.map((file,i)=>{const b=document.createElement('button');b.type='button';b.setAttribute('aria-label','查看第 '+(i+1)+' 張：'+p.captions[i]);const img=document.createElement('img');img.loading='lazy';window.jlmImage?window.jlmImage(img,'assets/'+file,'100px',true):img.src='assets/'+file;img.alt='';b.append(img);b.addEventListener('click',()=>showPhoto(i));return b;}));
  $('#photo-thumbnails').hidden=p.images.length===1;$('#photo-next').hidden=p.images.length===1;$('#photo-previous').hidden=p.images.length===1;
  showPhoto(0);$('#project-dialog').showModal();$('#project-dialog').scrollTop=0;
 }
 document.querySelectorAll('[data-project]').forEach(b=>b.addEventListener('click',()=>openProject(b.dataset.project)));
 document.querySelectorAll('[data-feature]').forEach(b=>b.addEventListener('click',()=>{
- featuredProject=b.dataset.feature;const p=projects[featuredProject];const featurePhoto=featuredProject==='terrace'?1:0;$('#feature-image').src='assets/'+p.images[featurePhoto];$('#feature-image').alt=p.title+'・'+p.captions[featurePhoto];$('#feature-label').textContent=p.label;$('#feature-title').textContent=p.title;$('#feature-description').textContent=p.subtitle;
+ featuredProject=b.dataset.feature;const p=projects[featuredProject];const featurePhoto=featuredProject==='terrace'?1:0;window.jlmImage?window.jlmImage($('#feature-image'),'assets/'+p.images[featurePhoto],'(max-width: 600px) 100vw, 800px'):$('#feature-image').src='assets/'+p.images[featurePhoto];$('#feature-image').alt=p.title+'・'+p.captions[featurePhoto];$('#feature-label').textContent=p.label;$('#feature-title').textContent=p.title;$('#feature-description').textContent=p.subtitle;
  document.querySelectorAll('[data-feature]').forEach(button=>{button.classList.toggle('active',button===b);button.setAttribute('aria-pressed',String(button===b));});
 }));
 
