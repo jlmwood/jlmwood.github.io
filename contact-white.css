@@ -25,3 +25,13 @@
 #contact .contact-line-primary{margin-top:22px}
 #contact .contact-requirements>summary{font-size:14px;min-height:44px;align-items:center}
 }
+
+/* User correction: retain a distinct green inquiry panel. */
+#contact form{background:#3d5a3e;color:#f6f4ed;border-color:#3d5a3e;border-radius:8px}
+#contact form .form-intro{border-color:#7e9685}
+#contact form .form-note{color:#dce4d8}
+#contact input,#contact textarea,#contact select{background:#3d5a3e;color:#f6f4ed;border-color:#8fa48f;border-radius:5px}
+#contact input::placeholder,#contact textarea::placeholder{color:#d1dccd}
+#contact form>.button{background:#f5f0e7;color:#243b30;border-color:#f5f0e7;border-radius:30px}
+#contact #inquiry-result{border-color:#8fa48f}
+#contact #inquiry-result button,#contact #inquiry-result .summary-line{background:#f5f0e7;color:#243b30;border-color:#f5f0e7}
