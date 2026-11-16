@@ -1,0 +1,27 @@
+/* White contact section: primary LINE entry and optional preparation form. */
+#contact{background:#fff;color:#243b30;gap:40px 64px;padding-top:64px;padding-bottom:72px}
+#contact h2{font-size:clamp(30px,3vw,42px);line-height:1.5}
+#contact .eyebrow{color:#65736a}
+#contact .contact-requirements{border-color:#e2e7e2;margin-bottom:0}
+#contact .contact-line-primary{border-color:#e2e7e2;margin-top:26px;padding:24px 0}
+#contact .contact-line-primary .button{min-height:56px;padding:16px 28px;border-radius:0;font-weight:600}
+#contact .contact-email-alternative a{border-bottom:1px solid #b5c0b7;padding-bottom:3px}
+#contact form{background:#fff;color:#243b30;border:1px solid #e2e7e2;border-radius:0;padding:30px 32px;align-self:start;box-shadow:none}
+#contact .form-intro{border-color:#e2e7e2;gap:16px;line-height:1.7}
+#contact .form-note{color:#657069;line-height:1.8}
+#contact input,#contact textarea,#contact select{background:#fff;color:#243b30;border:1px solid #bac6bd;border-radius:0;min-height:46px}
+#contact input::placeholder,#contact textarea::placeholder{color:#7a847d;opacity:1}
+#contact form>.button{background:#fff;color:#243b30;border:1px solid #718875;min-height:50px;border-radius:0}
+#contact #inquiry-result{border-color:#e2e7e2}
+#contact #inquiry-result button,#contact #inquiry-result .summary-line{background:#fff;border:1px solid #aab9ae;color:#243b30;min-height:44px}
+#contact #inquiry-result .summary-line{background:#173d31;color:#fff;border-color:#173d31}
+#contact #direct-email{overflow-wrap:anywhere}
+#contact .contact-requirements .button.green{background:#fff;border:1px solid #aab9ae;color:#243b30}
+@media(max-width:700px){
+#contact{padding-top:40px;padding-bottom:44px;gap:28px}
+#contact h2{font-size:30px}
+#contact form{padding:22px 18px}
+#contact .contact-line-primary .button{width:100%;justify-content:center}
+#contact .contact-line-primary{margin-top:22px}
+#contact .contact-requirements>summary{font-size:14px;min-height:44px;align-items:center}
+}
