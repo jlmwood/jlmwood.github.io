@@ -1,0 +1,23 @@
+/* Approved local direction: white manufacturing video section. */
+#process{background:#fff;color:#243b30}
+#process .process-heading{padding-top:72px;padding-bottom:34px;align-items:flex-end}
+#process .process-heading>p:last-child{position:static;color:#657069;margin:0;line-height:1.9}
+#process .eyebrow{color:#65736a}
+#process .production-clips{gap:28px}
+#process .production-clips article{min-width:0;background:transparent}
+#process .production-clips video{display:block;width:100%;aspect-ratio:4/3;object-fit:contain;background:#f2f3ef;border-radius:0}
+#process .production-clips h4{font-size:18px;font-weight:500;line-height:1.6;color:#243b30}
+#process .production-clips article>p:last-child{color:#657069;font-size:13px;line-height:1.9}
+#process .production-clips .eyebrow{margin-top:20px;margin-bottom:10px}
+#process .process-record-footer{border-color:#e2e6e1;margin-top:32px;padding-top:22px}
+#process .process-record-footer .note{color:#657069}
+#process .process-record-footer .text-link{color:#243b30;min-height:44px;display:inline-flex;align-items:center;border-color:#a9b5ad}
+#process .production-records{padding-bottom:56px}
+@media(max-width:700px){
+#process .process-heading{padding-top:44px;padding-bottom:26px}
+#process .process-heading h2{font-size:29px}
+#process .process-heading>p:last-child{margin-top:16px;font-size:13px}
+#process .production-clips{gap:30px}
+#process .production-clips .eyebrow{margin-top:16px}
+#process .production-records{padding-bottom:40px}
+}
