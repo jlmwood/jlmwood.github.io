@@ -1,0 +1,31 @@
+/* Local preview: three service entries with white editorial presentation. */
+#services{background:#fff;padding-top:80px;padding-bottom:64px}
+#services .section-heading{align-items:end;gap:40px;margin-bottom:38px}
+#services .section-heading h2{font-size:clamp(30px,3vw,42px);line-height:1.5;margin-bottom:0;color:#243b30}
+#services .section-heading .eyebrow{color:#65736a;margin-bottom:18px}
+#services .section-heading>p{font-size:14px;color:#657069;line-height:1.9;margin-bottom:3px}
+#services .service-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;align-items:stretch}
+#services .service-grid article{display:flex;flex-direction:column;background:#fff;border:0;border-radius:0;overflow:visible;box-shadow:none;padding:0}
+#services .service-photo,#services .technology-photo-frame{width:100%;height:auto;min-height:0;aspect-ratio:4/3;flex-shrink:0;border-radius:0}
+#services .technology-photo-frame{overflow:hidden}
+#services .technology-photo-frame .service-photo{height:100%;aspect-ratio:auto}
+#services .service-grid article:first-child .service-photo{background:#f5f6f3}
+#services .service-body{padding:22px 0 0;display:flex;flex-direction:column;flex:1}
+#services .service-icon-heading{color:#65736a}
+#services .icon-medallion{background:transparent;border:0;box-shadow:none}
+#services .service-body h3{font-size:25px;line-height:1.5;margin:14px 0 10px}
+#services .service-body>p{font-size:14px;line-height:1.9;color:#667168;min-height:0;margin-bottom:20px}
+#services .service-inquiry{align-self:flex-start;margin-top:auto;min-height:44px;padding:8px 0;border-bottom:1px solid #a9b5ad;font-size:14px;font-weight:600;border-radius:0}
+#services .cooperation-details{background:transparent;border-color:#e3e7e3;margin-top:38px}
+@media(max-width:700px){
+#services{padding-top:44px;padding-bottom:40px}
+#services .section-heading{display:block;margin-bottom:26px}
+#services .section-heading h2{font-size:30px}
+#services .section-heading>p{font-size:13px;margin-top:16px}
+#services .service-grid{grid-template-columns:1fr;gap:34px}
+#services .service-photo,#services .technology-photo-frame{aspect-ratio:16/10}
+#services .service-body{padding-top:16px}
+#services .service-body h3{font-size:23px;margin-top:12px}
+#services .service-body>p{margin-bottom:10px}
+#services .cooperation-details{margin-top:30px}
+}
